@@ -4,6 +4,7 @@
   "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/ImplementationGuide/tewhatuora.fhir.ig.medicalert",
   "version": "0.1.0",
   "name": "MedicAlert",
+  "title": "MedicAlert First Responder API FHIR IG",
   "status": "draft",
   "publisher": "Te Whatu Ora",
   "contact": [
@@ -73,6 +74,13 @@
         },
         "name": "MedicAlert Patient (IPS)",
         "description": "This profile represents the constraints applied to the Patient resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources..",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/MedicAlert-FirstResponderAPI"
+        },
+        "name": "MedicAlert-FirstResponderAPI",
         "exampleBoolean": false
       }
     ],
