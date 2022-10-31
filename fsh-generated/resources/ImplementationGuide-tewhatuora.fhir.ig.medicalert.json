@@ -1,0 +1,102 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "tewhatuora.fhir.ig.medicalert",
+  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/ImplementationGuide/tewhatuora.fhir.ig.medicalert",
+  "version": "0.1.0",
+  "name": "MedicAlert",
+  "status": "draft",
+  "publisher": "Te Whatu Ora",
+  "contact": [
+    {
+      "name": "Te Whatu Ora",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.tewhatuora.govt.nz/"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166",
+          "display": "New Zealand"
+        }
+      ]
+    }
+  ],
+  "packageId": "tewhatuora.fhir.ig.medicalert",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.ips",
+      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "version": "1.0.0",
+      "id": "hl7_fhir_uv_ips"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-AllergyIntolerance-ips"
+        },
+        "name": "MedicAlert AllergyIntolerance (IPS)",
+        "description": "This profile represents the constraints applied to AllergyIntolerance resource by the MedicAlert AllergyIntolerance profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.\n\nIt documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-composition-ips"
+        },
+        "name": "MedicAlert Composition (IPS)",
+        "description": "Clinical document used to represent the MedicAlert Patient Summary based on the International Patient Summary (IPS) data set. \nAn International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. \nThe IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO/DIS 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.\n\nThis profile is based on the ClinicalDocument profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-condition-ips"
+        },
+        "name": "MedicAlert Condition (IPS)",
+        "description": "This profile represents the constraints applied to the Condition resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of a problem is represented in the patient summary as an instance of the Condition resource constrained by this profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-patient-ips"
+        },
+        "name": "MedicAlert Patient (IPS)",
+        "description": "This profile represents the constraints applied to the Patient resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources..",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

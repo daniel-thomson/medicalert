@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicAlert-composition-ips",
+  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/StructureDefinition/MedicAlert-composition-ips",
+  "version": "0.1.0",
+  "name": "MedicAlertCompositionIps",
+  "title": "MedicAlert Composition (IPS)",
+  "status": "active",
+  "publisher": "MedicAlert",
+  "description": "Clinical document used to represent the MedicAlert Patient Summary based on the International Patient Summary (IPS) data set. \nAn International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. \nThe IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO/DIS 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.\n\nThis profile is based on the ClinicalDocument profile.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition"
+      }
+    ]
+  }
+}

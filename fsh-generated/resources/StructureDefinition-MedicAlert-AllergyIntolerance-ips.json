@@ -1,0 +1,42 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicAlert-AllergyIntolerance-ips",
+  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/StructureDefinition/MedicAlert-AllergyIntolerance-ips",
+  "version": "0.1.0",
+  "name": "MedicAlertAllergyIntoleranceIps",
+  "title": "MedicAlert AllergyIntolerance (IPS)",
+  "status": "active",
+  "publisher": "MedicAlert",
+  "description": "This profile represents the constraints applied to AllergyIntolerance resource by the MedicAlert AllergyIntolerance profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.\n\nIt documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance",
+        "path": "AllergyIntolerance"
+      }
+    ]
+  }
+}
