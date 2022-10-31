@@ -23,7 +23,17 @@ dependencies:
 
 menu:
   Home: index.html
+  Business Context: businessContext.html
+  Use Cases: useCases.html
+  API: API.html
+  Profiles: artifacts.html#structures-resource-profiles
   Artifacts: artifacts.html
+  Support: 
+    FHIR Spec: new-tab https://hl7.org/fhir/index.html
+    Te Whatu Ora Marketplace: new-tab https://marketplace.hira.health.nz/
+    Artefacts (JSON): definitions.json.zip
+    Artefacts (XML): definitions.zip
+    Download IG: full-ig.zip
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

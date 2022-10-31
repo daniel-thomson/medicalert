@@ -14,6 +14,40 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="businessContext.html">Business Context</a>
+  </li>
+  <li>
+    <a href="useCases.html">Use Cases</a>
+  </li>
+  <li>
+    <a href="API.html">API</a>
+  </li>
+  <li>
+    <a href="artifacts.html#structures-resource-profiles">Profiles</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="https://hl7.org/fhir/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://marketplace.hira.health.nz/">Te Whatu Ora Marketplace</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artefacts (JSON)</a>
+      </li>
+      <li>
+        <a href="definitions.zip">Artefacts (XML)</a>
+      </li>
+      <li>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+    </ul>
   </li>
 </ul>

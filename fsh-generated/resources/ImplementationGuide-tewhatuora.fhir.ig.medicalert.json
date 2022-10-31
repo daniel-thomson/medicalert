@@ -93,6 +93,21 @@
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "API.html",
+          "title": "API",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "businessContext.html",
+          "title": "Business Context",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "useCases.html",
+          "title": "Use Cases",
+          "generation": "markdown"
         }
       ]
     },
