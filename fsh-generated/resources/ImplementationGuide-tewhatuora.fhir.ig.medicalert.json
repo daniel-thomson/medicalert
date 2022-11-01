@@ -82,6 +82,13 @@
         },
         "name": "MedicAlert-FirstResponderAPI",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/summary"
+        },
+        "name": "summary",
+        "exampleBoolean": false
       }
     ],
     "page": {
