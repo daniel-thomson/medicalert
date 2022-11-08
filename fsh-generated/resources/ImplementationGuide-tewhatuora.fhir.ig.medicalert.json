@@ -85,9 +85,9 @@
       },
       {
         "reference": {
-          "reference": "OperationDefinition/summary"
+          "reference": "OperationDefinition/MedicAlertSummary"
         },
-        "name": "summary",
+        "name": "MedicAlertSummary",
         "exampleBoolean": false
       }
     ],

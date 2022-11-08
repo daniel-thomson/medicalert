@@ -1,0 +1,47 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "MedicAlertSummary",
+  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/OperationDefinition/MedicAlertSummary",
+  "version": "1.1.0",
+  "name": "MedicAlertPatientSummary",
+  "title": "MedicAlert Patient Summary",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2022-11-08T13:15:56.964-00:00",
+  "publisher": "MedicAlert",
+  "description": "This operation is used to return a patient summary from the MedicAlert using the IPS profile. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. E.g.:\n\nGET [base]/Patient$summary?_identifier=https://standards.digital.health.nz/ns/nhi|ZZZ0016&reason=emergency",
+  "affectsState": false,
+  "code": "summary",
+  "resource": [
+    "Patient"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "identifer",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Either the MedicAlert Member ID or a valid NHI number must be provided",
+      "type": "Identifier"
+    },
+    {
+      "name": "reason",
+      "documentation": "The reason/context that the service is accessed for",
+      "type": "string",
+      "use": "in",
+      "min": 1,
+      "max": "1"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "The Bundle returned is a document conforming to the specified input profile parameter or the International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html) (if not otherwise specified)",
+      "type": "Bundle"
+    }
+  ]
+}
