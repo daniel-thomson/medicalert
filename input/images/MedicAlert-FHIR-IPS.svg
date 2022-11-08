@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1010.4167px" preserveAspectRatio="none" style="width:806px;height:1010px;background:#FFFFFF;" version="1.1" viewBox="0 0 806 1010" width="806.25px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="57.5195" id="_title" rx="5.2083" ry="5.2083" style="stroke:none;stroke-width:2.0833333333333335;" width="454.1667" x="161.4896" y="10.4167"/><text fill="#000000" font-family="sans-serif" font-size="29.1667" font-weight="bold" lengthAdjust="spacing" textLength="433.3333" x="171.9062" y="51.1108">MedicAlert FHIR IPS structure</text><!--MD5=[536e464d8b1e54faa737ee1f4ae6355d]
+class Bundle--><g id="elem_Bundle"><rect codeLine="8" fill="#87CEEB" height="158.9844" id="Bundle" rx="5.2083" ry="5.2083" style="stroke:#181818;stroke-width:1.0416666666666667;" width="279.1667" x="390.625" y="95.0195"/><ellipse cx="476.25" cy="139.502" fill="#ADD1B2" rx="22.9167" ry="22.9167" style="stroke:#181818;stroke-width:2.0833333333333335;"/><path d="M473.8737,141.1621 L473.8737,146.3704 L482.8906,146.3704 L482.8906,144.4499 Q482.8906,143.1803 483.3789,142.627 Q483.8997,142.0736 484.681,142.0736 Q485.4622,142.0736 485.9505,142.627 Q486.4388,143.1803 486.4388,144.4499 L486.4388,149.9186 L469.7721,149.9186 Q468.4701,149.9186 467.9167,149.4303 Q467.3958,148.9421 467.3958,148.1283 Q467.3958,147.347 467.9492,146.8587 Q468.5026,146.3704 469.7721,146.3704 L470.3255,146.3704 L470.3255,132.5033 L469.7721,132.5033 Q468.4701,132.5033 467.9167,132.015 Q467.3958,131.5267 467.3958,130.7129 Q467.3958,129.9316 467.9167,129.4434 Q468.4701,128.9551 469.7721,128.9551 L485.6576,128.9551 L485.6576,134.3587 Q485.6576,135.6283 485.1693,136.1816 Q484.7135,136.7025 483.8997,136.7025 Q483.1185,136.7025 482.6302,136.1816 Q482.1419,135.6283 482.1419,134.3587 L482.1419,132.5033 L473.8737,132.5033 L473.8737,137.6139 L476.9661,137.6139 Q476.9661,136.2467 477.2266,135.8561 Q477.7799,135.0098 478.7565,135.0098 Q479.5378,135.0098 480.026,135.5632 Q480.5143,136.084 480.5143,137.3535 L480.5143,141.4551 Q480.5143,142.5944 480.2539,142.985 Q479.7005,143.7988 478.7565,143.7988 Q477.7799,143.7988 477.2266,142.9525 Q476.9661,142.5618 476.9661,141.1621 L473.8737,141.1621 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="25" font-style="italic" lengthAdjust="spacing" textLength="89.5833" x="518.5417" y="131.3883">«FHIR»</text><text fill="#000000" font-family="sans-serif" font-size="29.1667" lengthAdjust="spacing" textLength="91.6667" x="517.5" y="167.159">Bundle</text><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="392.7083" x2="667.7083" y1="183.9844" y2="183.9844"/><ellipse cx="413.5417" cy="213.7858" fill="none" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/><text fill="#000000" font-family="sans-serif" font-size="29.1667" font-weight="bold" lengthAdjust="spacing" textLength="62.5" x="432.2917" y="222.5952">type</text><text fill="#000000" font-family="sans-serif" font-size="29.1667" lengthAdjust="spacing" textLength="154.1667" x="503.125" y="222.5952">= document</text><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="392.7083" x2="667.7083" y1="237.3372" y2="237.3372"/></g><!--MD5=[251454e98c15f29849fb35b1904d0020]
+class Composition--><g id="elem_Composition"><rect codeLine="20" fill="#87CEEB" height="122.2982" id="Composition" rx="5.2083" ry="5.2083" style="stroke:#181818;stroke-width:1.0416666666666667;" width="229.1667" x="303.125" y="378.3529"/><ellipse cx="334.375" cy="422.8353" fill="#ADD1B2" rx="22.9167" ry="22.9167" style="stroke:#181818;stroke-width:2.0833333333333335;"/><path d="M331.9987,424.4954 L331.9987,429.7038 L341.0156,429.7038 L341.0156,427.7832 Q341.0156,426.5137 341.5039,425.9603 Q342.0247,425.4069 342.806,425.4069 Q343.5872,425.4069 344.0755,425.9603 Q344.5638,426.5137 344.5638,427.7832 L344.5638,433.252 L327.8971,433.252 Q326.5951,433.252 326.0417,432.7637 Q325.5208,432.2754 325.5208,431.4616 Q325.5208,430.6803 326.0742,430.1921 Q326.6276,429.7038 327.8971,429.7038 L328.4505,429.7038 L328.4505,415.8366 L327.8971,415.8366 Q326.5951,415.8366 326.0417,415.3483 Q325.5208,414.86 325.5208,414.0462 Q325.5208,413.265 326.0417,412.7767 Q326.5951,412.2884 327.8971,412.2884 L343.7826,412.2884 L343.7826,417.6921 Q343.7826,418.9616 343.2943,419.515 Q342.8385,420.0358 342.0247,420.0358 Q341.2435,420.0358 340.7552,419.515 Q340.2669,418.9616 340.2669,417.6921 L340.2669,415.8366 L331.9987,415.8366 L331.9987,420.9473 L335.0911,420.9473 Q335.0911,419.5801 335.3516,419.1895 Q335.9049,418.3431 336.8815,418.3431 Q337.6628,418.3431 338.151,418.8965 Q338.6393,419.4173 338.6393,420.6868 L338.6393,424.7884 Q338.6393,425.9277 338.3789,426.3184 Q337.8255,427.1322 336.8815,427.1322 Q335.9049,427.1322 335.3516,426.2858 Q335.0911,425.8952 335.0911,424.4954 L331.9987,424.4954 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="25" font-style="italic" lengthAdjust="spacing" textLength="89.5833" x="400" y="414.7217">«FHIR»</text><text fill="#000000" font-family="sans-serif" font-size="29.1667" lengthAdjust="spacing" textLength="162.5" x="363.5417" y="450.4924">Composition</text><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="305.2083" x2="530.2083" y1="467.3177" y2="467.3177"/><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="305.2083" x2="530.2083" y1="483.9844" y2="483.9844"/></g><!--MD5=[f1a9144029453156c6878f92b753144a]
+class AllergyIntolerance--><g id="elem_AllergyIntolerance"><rect codeLine="32" fill="#87CEEB" height="122.2982" id="AllergyIntolerance" rx="5.2083" ry="5.2083" style="stroke:#181818;stroke-width:1.0416666666666667;" width="302.0833" x="14.5833" y="626.2695"/><ellipse cx="45.8333" cy="670.752" fill="#ADD1B2" rx="22.9167" ry="22.9167" style="stroke:#181818;stroke-width:2.0833333333333335;"/><path d="M43.457,672.4121 L43.457,677.6204 L52.474,677.6204 L52.474,675.6999 Q52.474,674.4303 52.9622,673.877 Q53.4831,673.3236 54.2643,673.3236 Q55.0456,673.3236 55.5339,673.877 Q56.0221,674.4303 56.0221,675.6999 L56.0221,681.1686 L39.3555,681.1686 Q38.0534,681.1686 37.5,680.6803 Q36.9792,680.1921 36.9792,679.3783 Q36.9792,678.597 37.5326,678.1087 Q38.0859,677.6204 39.3555,677.6204 L39.9089,677.6204 L39.9089,663.7533 L39.3555,663.7533 Q38.0534,663.7533 37.5,663.265 Q36.9792,662.7767 36.9792,661.9629 Q36.9792,661.1816 37.5,660.6934 Q38.0534,660.2051 39.3555,660.2051 L55.2409,660.2051 L55.2409,665.6087 Q55.2409,666.8783 54.7526,667.4316 Q54.2969,667.9525 53.4831,667.9525 Q52.7018,667.9525 52.2135,667.4316 Q51.7253,666.8783 51.7253,665.6087 L51.7253,663.7533 L43.457,663.7533 L43.457,668.8639 L46.5495,668.8639 Q46.5495,667.4967 46.8099,667.1061 Q47.3633,666.2598 48.3398,666.2598 Q49.1211,666.2598 49.6094,666.8132 Q50.0977,667.334 50.0977,668.6035 L50.0977,672.7051 Q50.0977,673.8444 49.8372,674.235 Q49.2839,675.0488 48.3398,675.0488 Q47.3633,675.0488 46.8099,674.2025 Q46.5495,673.8118 46.5495,672.4121 L43.457,672.4121 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="25" font-style="italic" lengthAdjust="spacing" textLength="89.5833" x="147.9167" y="662.6383">«FHIR»</text><text fill="#000000" font-family="sans-serif" font-size="29.1667" lengthAdjust="spacing" textLength="235.4167" x="75" y="698.409">AllergyIntolerance</text><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="16.6667" x2="314.5833" y1="715.2344" y2="715.2344"/><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="16.6667" x2="314.5833" y1="731.901" y2="731.901"/></g><!--MD5=[a030fa97ffb865708cae79f6847e8968]
+class Condition--><g id="elem_Condition"><rect codeLine="41" fill="#87CEEB" height="122.2982" id="Condition" rx="5.2083" ry="5.2083" style="stroke:#181818;stroke-width:1.0416666666666667;" width="191.6667" x="538.5417" y="626.2695"/><ellipse cx="569.7917" cy="670.752" fill="#ADD1B2" rx="22.9167" ry="22.9167" style="stroke:#181818;stroke-width:2.0833333333333335;"/><path d="M567.4154,672.4121 L567.4154,677.6204 L576.4323,677.6204 L576.4323,675.6999 Q576.4323,674.4303 576.9206,673.877 Q577.4414,673.3236 578.2227,673.3236 Q579.0039,673.3236 579.4922,673.877 Q579.9805,674.4303 579.9805,675.6999 L579.9805,681.1686 L563.3138,681.1686 Q562.0117,681.1686 561.4583,680.6803 Q560.9375,680.1921 560.9375,679.3783 Q560.9375,678.597 561.4909,678.1087 Q562.0443,677.6204 563.3138,677.6204 L563.8672,677.6204 L563.8672,663.7533 L563.3138,663.7533 Q562.0117,663.7533 561.4583,663.265 Q560.9375,662.7767 560.9375,661.9629 Q560.9375,661.1816 561.4583,660.6934 Q562.0117,660.2051 563.3138,660.2051 L579.1992,660.2051 L579.1992,665.6087 Q579.1992,666.8783 578.7109,667.4316 Q578.2552,667.9525 577.4414,667.9525 Q576.6602,667.9525 576.1719,667.4316 Q575.6836,666.8783 575.6836,665.6087 L575.6836,663.7533 L567.4154,663.7533 L567.4154,668.8639 L570.5078,668.8639 Q570.5078,667.4967 570.7682,667.1061 Q571.3216,666.2598 572.2982,666.2598 Q573.0794,666.2598 573.5677,666.8132 Q574.056,667.334 574.056,668.6035 L574.056,672.7051 Q574.056,673.8444 573.7956,674.235 Q573.2422,675.0488 572.2982,675.0488 Q571.3216,675.0488 570.7682,674.2025 Q570.5078,673.8118 570.5078,672.4121 L567.4154,672.4121 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="25" font-style="italic" lengthAdjust="spacing" textLength="89.5833" x="616.6667" y="662.6383">«FHIR»</text><text fill="#000000" font-family="sans-serif" font-size="29.1667" lengthAdjust="spacing" textLength="125" x="598.9583" y="698.409">Condition</text><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="540.625" x2="728.125" y1="715.2344" y2="715.2344"/><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="540.625" x2="728.125" y1="731.901" y2="731.901"/></g><!--MD5=[9dd4eaa2771a2ff8dbee15cc1e732cab]
+class Patient--><g id="elem_Patient"><rect codeLine="51" fill="#87CEEB" height="122.2982" id="Patient" rx="5.2083" ry="5.2083" style="stroke:#181818;stroke-width:1.0416666666666667;" width="158.3333" x="451.0417" y="874.1862"/><ellipse cx="482.2917" cy="918.6686" fill="#ADD1B2" rx="22.9167" ry="22.9167" style="stroke:#181818;stroke-width:2.0833333333333335;"/><path d="M479.9154,920.3288 L479.9154,925.5371 L488.9323,925.5371 L488.9323,923.6165 Q488.9323,922.347 489.4206,921.7936 Q489.9414,921.2402 490.7227,921.2402 Q491.5039,921.2402 491.9922,921.7936 Q492.4805,922.347 492.4805,923.6165 L492.4805,929.0853 L475.8138,929.0853 Q474.5117,929.0853 473.9583,928.597 Q473.4375,928.1087 473.4375,927.2949 Q473.4375,926.5137 473.9909,926.0254 Q474.5443,925.5371 475.8138,925.5371 L476.3672,925.5371 L476.3672,911.6699 L475.8138,911.6699 Q474.5117,911.6699 473.9583,911.1816 Q473.4375,910.6934 473.4375,909.8796 Q473.4375,909.0983 473.9583,908.61 Q474.5117,908.1217 475.8138,908.1217 L491.6992,908.1217 L491.6992,913.5254 Q491.6992,914.7949 491.2109,915.3483 Q490.7552,915.8691 489.9414,915.8691 Q489.1602,915.8691 488.6719,915.3483 Q488.1836,914.7949 488.1836,913.5254 L488.1836,911.6699 L479.9154,911.6699 L479.9154,916.7806 L483.0078,916.7806 Q483.0078,915.4134 483.2682,915.0228 Q483.8216,914.1764 484.7982,914.1764 Q485.5794,914.1764 486.0677,914.7298 Q486.556,915.2507 486.556,916.5202 L486.556,920.6217 Q486.556,921.7611 486.2956,922.1517 Q485.7422,922.9655 484.7982,922.9655 Q483.8216,922.9655 483.2682,922.1191 Q483.0078,921.7285 483.0078,920.3288 L479.9154,920.3288 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="25" font-style="italic" lengthAdjust="spacing" textLength="89.5833" x="512.5" y="910.555">«FHIR»</text><text fill="#000000" font-family="sans-serif" font-size="29.1667" lengthAdjust="spacing" textLength="91.6667" x="511.4583" y="946.3257">Patient</text><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="453.125" x2="607.2917" y1="963.151" y2="963.151"/><line style="stroke:#181818;stroke-width:1.0416666666666667;" x1="453.125" x2="607.2917" y1="979.8177" y2="979.8177"/></g><!--MD5=[793678bb50764c1b644e05874fbe77cc]
+reverse link Bundle to Composition--><g id="link_Bundle_Composition"><path codeLine="67" d="M485.9792,279.0404 C471.5208,312.6445 455.9583,348.832 443.3542,378.1445 " fill="none" id="Bundle-backto-Composition" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="none" points="496.75,253.9987,484.1605,262.1963,486.8854,276.9702,499.4749,268.7726,496.75,253.9987" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[43dedead91947375d6e097f586002333]
+reverse link Bundle to Patient--><g id="link_Bundle_Patient"><path codeLine="68" d="M601.6458,276.4362 C659.375,363.9779 736.0417,496.9779 767.7083,626.2695 C780.7083,679.332 791.7292,700.1237 767.7083,749.1862 C735,815.9987 665.1042,865.5612 609.5833,896.3737 " fill="none" id="Bundle-backto-Patient" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="none" points="586.2917,253.5404,586.3191,268.5635,600.1972,274.3162,600.1697,259.2931,586.2917,253.5404" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[ba32e1c342015c5a15ae0fc8862f1ab7]
+reverse link Bundle to Condition--><g id="link_Bundle_Condition"><path codeLine="69" d="M551.4583,280.207 C572.7708,384.3529 604.8125,541.0404 622.1667,625.8945 " fill="none" id="Bundle-backto-Condition" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="none" points="546.0208,253.6237,540.3547,267.5373,551.0188,278.119,556.6849,264.2054,546.0208,253.6237" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[e270758151549abee28a96a69706696b]
+reverse link Bundle to AllergyIntolerance--><g id="link_Bundle_AllergyIntolerance"><path codeLine="70" d="M375.5833,269.7695 C335.2708,300.207 294.9583,336.9779 265.625,378.3529 C211.9375,454.1029 185.875,560.3529 174.1458,625.9987 " fill="none" id="Bundle-backto-AllergyIntolerance" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="none" points="397.9167,253.5195,382.9059,254.1286,377.6947,268.2189,392.7055,267.6099,397.9167,253.5195" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[4296885d4dd788fa2162b781b9edba72]
+link Composition to Patient--><g id="link_Composition_Patient"><path codeLine="73" d="M431.5,502.1862 C452.3958,593.4779 491.9583,766.3945 514.125,863.2695 " fill="none" id="Composition-to-Patient" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="#181818" points="516.4792,873.5404,520.4218,853.4043,514.1565,863.386,504.1748,857.1206,516.4792,873.5404" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[e6c5a70cea1b2e153663cd924d366ff5]
+link Composition to AllergyIntolerance--><g id="link_Composition_AllergyIntolerance"><path codeLine="74" d="M356.0417,501.5195 C319.7292,536.6445 273.6667,581.1862 235.9375,617.6654 " fill="none" id="Composition-to-AllergyIntolerance" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="#181818" points="227.5208,625.7904,246.8024,618.774,235.0192,618.5598,235.2335,606.7766,227.5208,625.7904" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[306955a65f729f0a2357d7ca088bde35]
+link Composition to Condition--><g id="link_Composition_Condition"><path codeLine="75" d="M470.7083,501.5195 C501.9167,536.6445 541.5208,581.1862 573.9375,617.6654 " fill="none" id="Composition-to-Condition" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="#181818" points="581.1667,625.7904,574.9754,606.2283,574.261,617.9917,562.4976,617.2773,581.1667,625.7904" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[9c1b2b12a6d3ad35c7aea644dc8c6290]
+link AllergyIntolerance to Patient--><g id="link_AllergyIntolerance_Patient"><path codeLine="76" d="M254.8125,749.4362 C311.6458,787.4362 384.9792,836.457 441.6667,874.3737 " fill="none" id="AllergyIntolerance-to-Patient" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="#181818" points="450.625,880.3529,439.6878,862.9925,441.9716,874.5542,430.4098,876.838,450.625,880.3529" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[c96bd6499f55cc54eff79b4ca74838ec]
+link Condition to Patient--><g id="link_Condition_Patient"><path codeLine="77" d="M608.8958,749.4362 C594.1458,783.957 575.5,827.6029 560.0417,863.7279 " fill="none" id="Condition-to-Patient" style="stroke:#181818;stroke-width:4.166666666666667;"/><polygon fill="#181818" points="555.7917,873.707,570.8372,859.7557,559.895,864.1326,555.5181,853.1904,555.7917,873.707" style="stroke:#181818;stroke-width:4.166666666666667;"/></g><!--MD5=[71f762bfe69d4ca05aa1099f20ce31a5]
+@startuml MedicAlert-FHIR-IPS
+Title "MedicAlert FHIR IPS structure"
+skinparam BoxPadding 6
+skinparam ParticipantPadding 1
+skinparam roundcorner 5
+skinparam sequenceArrowThickness 2
+skinparam dpi 200
+
+entity Bundle <<FHIR>> #SkyBlue {
+    + **type** = document
+'    + **identifier**
+'    + **timestamp**
+'    ...
+'    - - References - -
+'    + **entry:Composition** -> Composition
+'    + **entry:Patient** -> Patient
+'    + **entry:AllergyIntolerance** -> AllergyIntolerance
+'    + **entry:Condition** -> AllergyIntolerance
+}
+
+entity Composition <<FHIR>> #SkyBlue {
+'    + **versionNumber**
+'    + **author**
+'    ...
+'    - - References - -
+'    + **subject** -> Patient
+'    + **section:SectionAllergyIntolerance** -> AllergyIntolerance
+'    + **section:SectionProblems** -> Condition
+'    + **section:SectionAdvanceDirectives** -> DocumentReference
+
+}
+
+entity AllergyIntolerance <<FHIR>> #SkyBlue {
+'    + **category**
+'    + **code**
+'    + **note**
+ '   ...
+'    - - Refereneces - -
+'    + **subject** -> Patient
+}
+
+entity Condition <<FHIR>> #SkyBlue {  
+'    + **category**
+'    + **code**
+'    + **severity**
+'    + **note**
+'    ...
+'    - - References - -
+'    + **subject** -> Patient 
+}
+
+entity Patient <<FHIR>> #SkyBlue {
+'   + **identifier:NHI**
+ '  + **identifier:MedicAlert id**
+'   + **active**
+ '  + **name**
+'   + **telecom**
+'   + **gender**
+'   + **birthDate**
+'   + **deceased[x]**
+'   + **address**
+'   + **contact**
+'   + **communication**
+'   + **managingOrganisation**
+}
+
+' Bundle contains other resources
+Bundle o- - Composition
+Bundle o- - Patient
+Bundle o- - Condition
+Bundle o- - AllergyIntolerance
+
+' Resources Reference each other
+Composition - -> Patient
+Composition - -> AllergyIntolerance
+Composition - -> Condition
+AllergyIntolerance - -> Patient
+Condition - -> Patient
+
+@enduml
+
+@startuml MedicAlert-FHIR-IPS
+Title "MedicAlert FHIR IPS structure"
+skinparam BoxPadding 6
+skinparam ParticipantPadding 1
+skinparam roundcorner 5
+skinparam sequenceArrowThickness 2
+skinparam dpi 200
+
+entity Bundle <<FHIR>> #SkyBlue {
+    + **type** = document
+}
+
+entity Composition <<FHIR>> #SkyBlue {
+
+}
+
+entity AllergyIntolerance <<FHIR>> #SkyBlue {
+}
+
+entity Condition <<FHIR>> #SkyBlue {  
+}
+
+entity Patient <<FHIR>> #SkyBlue {
+}
+
+Bundle o- - Composition
+Bundle o- - Patient
+Bundle o- - Condition
+Bundle o- - AllergyIntolerance
+
+Composition - -> Patient
+Composition - -> AllergyIntolerance
+Composition - -> Condition
+AllergyIntolerance - -> Patient
+Condition - -> Patient
+
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 05:01:30 NZST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: NZ
+--></g></svg>

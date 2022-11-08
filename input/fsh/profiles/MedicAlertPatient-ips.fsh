@@ -6,3 +6,10 @@ Description: """This profile represents the constraints applied to the Patient r
 * ^version = "0.1.0"
 * ^status = #active
 * ^publisher = "MedicAlert"
+
+* contained 0..0
+* modifierExtension 0..0
+* photo 0..0
+* multipleBirth[x] 0..0
+* generalPractitioner 0..0
+* link 0..0
