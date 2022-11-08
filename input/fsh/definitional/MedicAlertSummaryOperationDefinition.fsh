@@ -23,7 +23,7 @@ GET [base]/Patient$summary?_identifier=https://standards.digital.health.nz/ns/nh
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Either the MedicAlert Member ID or a valid NHI number must be provided"
+* parameter[=].documentation = "Either the MedicAlert Member ID or a valid NHI number must be provided. This should be provided as the identifier system URI followed by the id, seperated by a pipe character"
 * parameter[=].type = #Identifier
 
 //* parameter[+].name = #profile
