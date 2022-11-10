@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MARiskRating",
+  "id": "ma-risk-rating-vs",
+  "title": "MedicAlertRiskRatings",
+  "description": "Risk rating valueset for tags",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/ValueSet/RiskRating",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.medicalert.nz/CodeSystem/RiskRating"
+      }
+    ]
+  }
+}

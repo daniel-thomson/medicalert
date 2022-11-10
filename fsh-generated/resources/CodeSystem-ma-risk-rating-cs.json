@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MARiskRating",
+  "id": "ma-risk-rating-cs",
+  "title": "MedicAlertRiskRatings",
+  "description": "Risk rating valueset for tags",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/CodeSystem/RiskRating",
+  "concept": [
+    {
+      "code": "0.1-1.99",
+      "display": "Life Threatening"
+    },
+    {
+      "code": "2-2.99",
+      "display": "Permanent Harm"
+    },
+    {
+      "code": "3-3.99",
+      "display": "Low Harm"
+    },
+    {
+      "code": "4",
+      "display": "Information / don't disclose"
+    }
+  ],
+  "count": 4
+}

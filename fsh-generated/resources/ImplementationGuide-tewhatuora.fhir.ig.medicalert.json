@@ -86,10 +86,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ma-risk-rating-vs"
+        },
+        "name": "MedicAlertRiskRatings",
+        "description": "Risk rating valueset for tags",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/member-status-warning-valueset"
         },
         "name": "Member Status Warning Codes",
         "description": "Warnings about member status which may a patient summary's interpretation, information currency, or accuracy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ma-risk-rating-cs"
+        },
+        "name": "MedicAlertRiskRatings",
+        "description": "Risk rating valueset for tags",
         "exampleBoolean": false
       },
       {
