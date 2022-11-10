@@ -78,6 +78,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/member-status-warning"
+        },
+        "name": "MemberWarningStatus",
+        "description": "ModifierExtension for warnings about member status. The status may alter the interpretation, or warn about the currency or accuracy of information in the patient summary",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/member-status-warning-valueset"
+        },
+        "name": "Member Status Warning Codes",
+        "description": "Warnings about member status which may a patient summary's interpretation, information currency, or accuracy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/member-status-warning-codesystem"
+        },
+        "name": "Member Status Warning Codes",
+        "description": "Warnings about member status which may a patient summary's interpretation, information currency, or accuracy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/MedicAlert-FirstResponderAPI"
         },
         "name": "MedicAlert-FirstResponderAPI",

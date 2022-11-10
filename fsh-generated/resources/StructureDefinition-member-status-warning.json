@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "member-status-warning",
+  "url": "https://standards.medicalert.nz/MemberStatusWarning",
+  "version": "0.1.0",
+  "name": "MemberWarningStatus",
+  "status": "active",
+  "date": "2020-11-10",
+  "publisher": "MedicAlert",
+  "description": "ModifierExtension for warnings about member status. The status may alter the interpretation, or warn about the currency or accuracy of information in the patient summary",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Composition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "ModifierExtension for warnings about member status. The status may alter the interpretation, or warn about the currency or accuracy of information in the patient summary",
+        "max": "1",
+        "isModifier": true,
+        "isModifierReason": "Status or age of information may alter interpretation or reliability of patient summary"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://standards.medicalert.nz/MemberStatusWarning"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.medicalert.nz/ValueSet/MemberStatusWarning"
+        }
+      }
+    ]
+  }
+}

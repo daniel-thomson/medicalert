@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MemberStatusWarningCodeSystem",
+  "id": "member-status-warning-codesystem",
+  "title": "Member Status Warning Codes",
+  "description": "Warnings about member status which may a patient summary's interpretation, information currency, or accuracy",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/CodeSystem/MemberStatusWarning",
+  "concept": [
+    {
+      "code": "Foundation Member",
+      "display": "Foundation Member"
+    }
+  ],
+  "count": 1
+}

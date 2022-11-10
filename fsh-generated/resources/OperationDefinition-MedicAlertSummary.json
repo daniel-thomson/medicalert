@@ -9,7 +9,7 @@
   "kind": "operation",
   "date": "2022-11-08T13:15:56.964-00:00",
   "publisher": "MedicAlert",
-  "description": "This operation is used to return a patient summary from the MedicAlert using the IPS profile. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. E.g.:\n\nGET [base]/Patient$summary?_identifier=https://standards.digital.health.nz/ns/nhi&#124ZZZ0016&reason=emergency",
+  "description": "This operation is used to return a patient summary from the MedicAlert using the IPS profile. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. E.g.:\n\nGET [base]/Patient$summary?_identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=emergency (note the 'pipe' character must be URL encoded)",
   "affectsState": false,
   "code": "summary",
   "resource": [
@@ -24,7 +24,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Either the MedicAlert Member ID or a valid NHI number must be provided",
+      "documentation": "Either the MedicAlert Member ID or a valid NHI number must be provided. This should be provided as the identifier system URI followed by the id, seperated by a pipe character",
       "type": "Identifier"
     },
     {

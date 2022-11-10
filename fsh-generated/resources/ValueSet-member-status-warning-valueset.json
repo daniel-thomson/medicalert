@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MemberStatusWarningValueSet",
+  "id": "member-status-warning-valueset",
+  "title": "Member Status Warning Codes",
+  "description": "Warnings about member status which may a patient summary's interpretation, information currency, or accuracy",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/ValueSet/MemberStatusWarning",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.medicalert.nz/CodeSystem/MemberStatusWarning"
+      }
+    ]
+  }
+}

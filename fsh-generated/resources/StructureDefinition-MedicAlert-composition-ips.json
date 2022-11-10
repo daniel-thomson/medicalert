@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MedicAlert-composition-ips",
-  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/StructureDefinition/MedicAlert-composition-ips",
+  "url": "https://standards.medicalert.nz/MAPatientSummaryComposition",
   "version": "0.1.0",
   "name": "MedicAlertCompositionIps",
   "title": "MedicAlert Composition (IPS)",
@@ -44,8 +44,34 @@
   "differential": {
     "element": [
       {
-        "id": "Composition",
-        "path": "Composition"
+        "id": "Composition.modifierExtension",
+        "path": "Composition.modifierExtension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.modifierExtension:MemberWarningStatus",
+        "path": "Composition.modifierExtension",
+        "sliceName": "MemberWarningStatus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.medicalert.nz/MemberStatusWarning"
+            ]
+          }
+        ]
       }
     ]
   }
