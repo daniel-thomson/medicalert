@@ -34,8 +34,12 @@
   "differential": {
     "element": [
       {
-        "id": "AllergyIntolerance",
-        "path": "AllergyIntolerance"
+        "id": "AllergyIntolerance.meta.tag",
+        "path": "AllergyIntolerance.meta.tag",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"
+        }
       }
     ]
   }

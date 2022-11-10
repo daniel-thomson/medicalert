@@ -6,3 +6,6 @@ Description: """This profile represents the constraints applied to the Condition
 * ^version = "0.1.0"
 * ^status = #active
 * ^publisher = "MedicAlert"
+
+
+* meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required)
