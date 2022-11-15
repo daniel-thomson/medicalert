@@ -86,6 +86,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/access-reason-vs"
+        },
+        "name": "MedicAlert Access Reason ValueSet",
+        "description": "Reason for accessing the API",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ma-risk-rating-vs"
         },
         "name": "MedicAlertRiskRatings",
@@ -98,6 +106,14 @@
         },
         "name": "Member Status Warning Codes",
         "description": "Warnings about member status which may a patient summary's interpretation, information currency, or accuracy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/access-reason-cs"
+        },
+        "name": "MedicAlert Access Reason CodeSystem",
+        "description": "Reason for accessing the API",
         "exampleBoolean": false
       },
       {

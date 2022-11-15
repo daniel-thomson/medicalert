@@ -1,18 +1,23 @@
 Instance: MedicAlertSummary
 InstanceOf: OperationDefinition
 Usage: #definition
-* version = "1.1.0"
+* version = "1.0.0"
 * name = "MedicAlertPatientSummary"
 * title = "MedicAlert Patient Summary"
+* url = "https://standards.medicalert.nz/MedicAlertSummary"
 * status = #draft
-* kind = #operation
+* kind = #query
 * date = "2022-11-08T13:15:56.964-00:00"
 * publisher = "MedicAlert"
 
-* description = "This operation is used to return a patient summary from the MedicAlert using the IPS profile. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. E.g.:
+* description = "This operation is used to return a patient summary from MedicAlert which is based on the International Patient Summary profiles. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. The $summary operation must be invoked as a POST with the parameters passed in the message body E.g.:
+```
+POST [base]/Patient/$summary
+Content-Type: application/x-www-form-urlencoded
 
-GET [base]/Patient$summary?_identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=emergency (note the 'pipe' character must be URL encoded)"
-
+_identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=EmergencyAccess
+```
+Note that the '|' character must be URL encoded as %7C"
 * affectsState = false
 * code = #summary
 * resource = #Patient
@@ -43,7 +48,9 @@ GET [base]/Patient$summary?_identifier=https://standards.digital.health.nz/ns/nh
 // add reason string
 * parameter[+].name = #reason
 * parameter[=].documentation = "The reason/context that the service is accessed for"
-* parameter[=].type = #string
+* parameter[=].type = #Coding
+* parameter[=].binding.valueSet = "https://standards.medicalert.nz/ValueSet/AccessReason"
+* parameter[=].binding.strength = #required
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"

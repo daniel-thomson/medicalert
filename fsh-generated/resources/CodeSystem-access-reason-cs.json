@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "AccessReason",
+  "id": "access-reason-cs",
+  "title": "MedicAlert Access Reason CodeSystem",
+  "description": "Reason for accessing the API",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/CodeSystem/AccessReason",
+  "concept": [
+    {
+      "code": "Test",
+      "display": "For testing usage only"
+    },
+    {
+      "code": "EmergencyAccess",
+      "display": "Emergency Access"
+    },
+    {
+      "code": "NonEmergencyAccess",
+      "display": "Non Emergency Access"
+    },
+    {
+      "code": "Accident",
+      "display": "Accident"
+    }
+  ],
+  "caseSensitive": false,
+  "count": 4
+}

@@ -49,8 +49,12 @@
   "differential": {
     "element": [
       {
-        "id": "Condition",
-        "path": "Condition"
+        "id": "Condition.meta.tag",
+        "path": "Condition.meta.tag",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"
+        }
       }
     ]
   }

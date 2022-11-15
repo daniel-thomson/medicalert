@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AccessReason",
+  "id": "access-reason-vs",
+  "title": "MedicAlert Access Reason ValueSet",
+  "description": "Reason for accessing the API",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/ValueSet/AccessReason",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.medicalert.nz/CodeSystem/AccessReason"
+      }
+    ]
+  }
+}

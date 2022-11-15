@@ -1,15 +1,15 @@
 {
   "resourceType": "OperationDefinition",
   "id": "MedicAlertSummary",
-  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/OperationDefinition/MedicAlertSummary",
+  "url": "https://standards.medicalert.nz/MedicAlertSummary",
   "version": "1.1.0",
   "name": "MedicAlertPatientSummary",
   "title": "MedicAlert Patient Summary",
   "status": "draft",
-  "kind": "operation",
+  "kind": "query",
   "date": "2022-11-08T13:15:56.964-00:00",
   "publisher": "MedicAlert",
-  "description": "This operation is used to return a patient summary from the MedicAlert using the IPS profile. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. E.g.:\n\nGET [base]/Patient$summary?_identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=emergency (note the 'pipe' character must be URL encoded)",
+  "description": "This operation is used to return a patient summary from MedicAlert which is based on the International Patient Summary profiles. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. The $summary operation must be invoked as a POST with the parameters passed in the message body E.g.:\n```\nPOST [base]/Patient$summary\nContent-Type: application/x-www-form-urlencoded\n\n_identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=EmergencyAccess\n```\nNote that the '|' character must be URL encoded as %7C",
   "affectsState": false,
   "code": "summary",
   "resource": [
@@ -30,7 +30,11 @@
     {
       "name": "reason",
       "documentation": "The reason/context that the service is accessed for",
-      "type": "string",
+      "type": "Coding",
+      "binding": {
+        "valueSet": "https://standards.medicalert.nz/ValueSet/AccessReason",
+        "strength": "required"
+      },
       "use": "in",
       "min": 1,
       "max": "1"
