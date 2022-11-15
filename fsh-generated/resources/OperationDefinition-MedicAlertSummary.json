@@ -2,14 +2,14 @@
   "resourceType": "OperationDefinition",
   "id": "MedicAlertSummary",
   "url": "https://standards.medicalert.nz/MedicAlertSummary",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "name": "MedicAlertPatientSummary",
   "title": "MedicAlert Patient Summary",
   "status": "draft",
   "kind": "query",
   "date": "2022-11-08T13:15:56.964-00:00",
   "publisher": "MedicAlert",
-  "description": "This operation is used to return a patient summary from MedicAlert which is based on the International Patient Summary profiles. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. The $summary operation must be invoked as a POST with the parameters passed in the message body E.g.:\n```\nPOST [base]/Patient$summary\nContent-Type: application/x-www-form-urlencoded\n\n_identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=EmergencyAccess\n```\nNote that the '|' character must be URL encoded as %7C",
+  "description": "The MedicAlert first responder API is queried using a FHIR operation. This is the $summary operation invoked on the Patient resource. The $summary operation returns a set of resources, organized as a Bundle. \n\nThe response Bundle is structured as a FHIR document that is based on the [IPS standard](https://hl7.org/fhir/uv/ips/). \n\nAn identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. \n\n### Querying the API\n\nThe $summary operation must be invoked as a POST with the parameters passed in the message body.\n\nAn example query for emergency access using an NHI number:\n```\nPOST [base]/Patient/$summary\nContent-Type: application/x-www-form-urlencoded\n\n_identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=EmergencyAccess\n```\nAn example query for non emergency access using the MedicAlert id:\n```\nPOST [base]/Patient/$summary\nContent-Type: application/x-www-form-urlencoded\n\n_identifier=https://standards.medicalert.nz/memberId/1001&reason=NonEmergencyAccess\n```\n\n(note that non-standard ASCII characters such as the '|' character must be URL encoded)",
   "affectsState": false,
   "code": "summary",
   "resource": [
@@ -44,7 +44,7 @@
       "use": "out",
       "min": 0,
       "max": "1",
-      "documentation": "The Bundle returned is a document conforming to the specified input profile parameter or the International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html) (if not otherwise specified)",
+      "documentation": "The Bundle returned is a patient summary conforming to the [MedicAlert Patient Summary bundle](https://standards.medicalert.nz/MedicAlertPatientSummaryBundle) (if not otherwise specified)",
       "type": "Bundle"
     }
   ]

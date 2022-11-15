@@ -20,10 +20,16 @@
     <a href="useCases.html">Use Cases</a>
   </li>
   <li>
-    <a href="OperationDefinition-MedicAlertSummary.html">API</a>
+    <a href="patientSummaryOverview.html">Patient Summary Overview</a>
+  </li>
+  <li>
+    <a href="OperationDefinition-MedicAlertSummary.html">FirstResponder API</a>
   </li>
   <li>
     <a href="artifacts.html#structures-resource-profiles">Profiles</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>

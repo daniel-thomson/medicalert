@@ -10,14 +10,32 @@ Usage: #definition
 * date = "2022-11-08T13:15:56.964-00:00"
 * publisher = "MedicAlert"
 
-* description = "This operation is used to return a patient summary from MedicAlert which is based on the International Patient Summary profiles. An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. The $summary operation must be invoked as a POST with the parameters passed in the message body E.g.:
+* description = "The MedicAlert first responder API is queried using a FHIR operation. This is the $summary operation invoked on the Patient resource. The $summary operation returns a set of resources, organized as a Bundle. 
+
+The response Bundle is structured as a FHIR document that is based on the [IPS standard](https://hl7.org/fhir/uv/ips/). 
+
+An identifier for the patient (MedicAlert ID or NHI number) must be provided along with a reason for the API access. 
+
+### Querying the API
+
+The $summary operation must be invoked as a POST with the parameters passed in the message body.
+
+An example query for emergency access using an NHI number:
 ```
 POST [base]/Patient/$summary
 Content-Type: application/x-www-form-urlencoded
 
 _identifier=https://standards.digital.health.nz/ns/nhi%7CZZZ0016&reason=EmergencyAccess
 ```
-Note that the '|' character must be URL encoded as %7C"
+An example query for non emergency access using the MedicAlert id:
+```
+POST [base]/Patient/$summary
+Content-Type: application/x-www-form-urlencoded
+
+_identifier=https://standards.medicalert.nz/memberId/1001&reason=NonEmergencyAccess
+```
+
+(note that non-standard ASCII characters such as the '|' character must be URL encoded)"
 * affectsState = false
 * code = #summary
 * resource = #Patient

@@ -38,7 +38,7 @@
     {
       "packageId": "hl7.fhir.uv.ips",
       "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
-      "version": "1.0.0",
+      "version": "current",
       "id": "hl7_fhir_uv_ips"
     }
   ],
@@ -74,6 +74,14 @@
         },
         "name": "MedicAlert Patient (IPS)",
         "description": "This profile represents the constraints applied to the Patient resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources..",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-patient-summary-bundle-ips"
+        },
+        "name": "MedicAlert Patient Summary Bundle",
+        "description": "MedicAlert profile on the Bundle resource.",
         "exampleBoolean": false
       },
       {
@@ -158,13 +166,18 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "API.html",
-          "title": "API",
+          "nameUrl": "businessContext.html",
+          "title": "Business Context",
           "generation": "markdown"
         },
         {
-          "nameUrl": "businessContext.html",
-          "title": "Business Context",
+          "nameUrl": "conformance.html",
+          "title": "Conformance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "patientSummaryOverview.html",
+          "title": "Patient Summary Overview",
           "generation": "markdown"
         },
         {
