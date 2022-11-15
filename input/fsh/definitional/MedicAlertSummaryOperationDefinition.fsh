@@ -60,5 +60,5 @@ Note that the '|' character must be URL encoded as %7C"
 * parameter[=].use = #out
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "The Bundle returned is a document conforming to the specified input profile parameter or the International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html) (if not otherwise specified)"
+* parameter[=].documentation = "The Bundle returned is a patient summary conforming to the [MedicAlert Patient Summary bundle](https://standards.medicalert.nz/MedicAlertPatientSummaryBundle) (if not otherwise specified)"
 * parameter[=].type = #Bundle
