@@ -6,4 +6,5 @@ Description: """MedicAlert profile on the Bundle resource."""
 * ^version = "0.1.0"
 * ^status = #active
 * ^publisher = "MedicAlert"
-* ^url = "https://standards.medicalert.nz/ns/MaBundle"
+* ^url = "https://standards.medicalert.nz/ns/MaPatientSummaryBundle"
+

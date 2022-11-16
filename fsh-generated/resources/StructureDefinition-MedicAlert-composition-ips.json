@@ -68,7 +68,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://standards.medicalert.nz/MemberStatusWarning"
+              "https://standards.medicalert.nz/ns/MemberStatusWarning"
             ]
           }
         ]

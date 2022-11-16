@@ -14,7 +14,6 @@ publisher:
   url: https://www.tewhatuora.govt.nz/
   # email: test@example.org
 
-
 dependencies:
 
   hl7.fhir.uv.ips:
@@ -24,7 +23,6 @@ dependencies:
 menu:
   Home: index.html
   Business Context: businessContext.html
-  Use Cases: useCases.html
   Patient Summary Overview: patientSummaryOverview.html
   FirstResponder API: OperationDefinition-MedicAlertSummary.html
   Profiles: artifacts.html#structures-resource-profiles

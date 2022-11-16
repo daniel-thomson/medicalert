@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "member-status-warning",
-  "url": "https://standards.medicalert.nz/MemberStatusWarning",
+  "url": "https://standards.medicalert.nz/ns/MemberStatusWarning",
   "version": "0.1.0",
   "name": "MemberWarningStatus",
   "status": "active",
@@ -45,7 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://standards.medicalert.nz/MemberStatusWarning"
+        "fixedUri": "https://standards.medicalert.nz/ns/MemberStatusWarning"
       },
       {
         "id": "Extension.value[x]",

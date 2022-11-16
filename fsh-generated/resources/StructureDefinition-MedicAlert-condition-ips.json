@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MedicAlert-condition-ips",
-  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/StructureDefinition/MedicAlert-condition-ips",
+  "url": "https://standards.medicalert.nz/ns/MaCondition",
   "version": "0.1.0",
   "name": "MedicAlertConditionIps",
   "title": "MedicAlert Condition (IPS)",

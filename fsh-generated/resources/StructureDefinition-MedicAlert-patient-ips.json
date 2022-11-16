@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MedicAlert-patient-ips",
-  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/StructureDefinition/MedicAlert-patient-ips",
+  "url": "https://standards.medicalert.nz/ns/MaPatient",
   "version": "0.1.0",
   "name": "MedicAlertPatientIps",
   "title": "MedicAlert Patient (IPS)",
@@ -51,6 +51,76 @@
       {
         "id": "Patient.modifierExtension",
         "path": "Patient.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "openAtEnd",
+          "description": "MedicAlert member id and NHI number"
+        }
+      },
+      {
+        "id": "Patient.identifier:NHI",
+        "path": "Patient.identifier",
+        "sliceName": "NHI",
+        "short": "testShort",
+        "definition": "testDefinition",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NHI.type",
+        "path": "Patient.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:NHI.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/nhi-id"
+      },
+      {
+        "id": "Patient.identifier:NHI.period",
+        "path": "Patient.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MedicAlertID",
+        "path": "Patient.identifier",
+        "sliceName": "MedicAlertID",
+        "short": "testShort",
+        "definition": "testDefinition",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:MedicAlertID.type",
+        "path": "Patient.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MedicAlertID.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "https://standards.medicalert.nz/ns/memberid"
+      },
+      {
+        "id": "Patient.identifier:MedicAlertID.period",
+        "path": "Patient.identifier.period",
         "max": "0"
       },
       {

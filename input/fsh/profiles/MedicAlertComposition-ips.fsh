@@ -13,5 +13,5 @@ This profile is based on the ClinicalDocument profile."""
 * ^publisher = "MedicAlert"
 * ^url = "https://standards.medicalert.nz/MAPatientSummaryComposition"
 
-* modifierExtension contains https://standards.medicalert.nz/MemberStatusWarning named MemberWarningStatus 1..1
+* modifierExtension contains https://standards.medicalert.nz/ns/MemberStatusWarning named MemberWarningStatus 1..1
 
