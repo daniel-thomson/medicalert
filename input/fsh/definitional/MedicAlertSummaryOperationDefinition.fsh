@@ -4,7 +4,7 @@ Usage: #definition
 * version = "1.0.0"
 * name = "MedicAlertPatientSummary"
 * title = "MedicAlert Patient Summary"
-* url = "https://standards.medicalert.nz/MedicAlertSummary"
+* url = "https://standards.medicalert.nz/ns/MedicAlertSummary"
 * status = #draft
 * kind = #query
 * date = "2022-11-08T13:15:56.964-00:00"
