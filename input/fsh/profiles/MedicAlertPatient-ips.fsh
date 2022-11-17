@@ -24,7 +24,6 @@ Description: """This profile represents the constraints applied to the Patient r
 * identifier ^slicing.discriminator[1].path = "system"
 
 * identifier ^slicing.rules = #openAtEnd
-
 * identifier ^slicing.description = "MedicAlert member id and NHI number"
 
 * identifier contains NHI 0..1 MS and MedicAlertID 0..1 MS

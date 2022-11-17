@@ -1,5 +1,5 @@
-id: tewhatuora.fhir.ig.medicalert
-canonical: https://tewhatuora.govt.nz/fhir/ig/medicalert
+id: medicalert.fhir.ig.firstresponder
+canonical: https://standards.medicalert.nz/ns/medicalert
 name: MedicAlert
 title: MedicAlert First Responder API FHIR IG
 status: draft # draft | active | retired | unknown
@@ -10,8 +10,8 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#NZ "New Zealand" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Te Whatu Ora
-  url: https://www.tewhatuora.govt.nz/
+  name: MedicAlert
+  url: https://medicalert.nz/
   # email: test@example.org
 
 dependencies:

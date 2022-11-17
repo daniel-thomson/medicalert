@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "MedicAlert-FirstResponderAPI",
-  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/CapabilityStatement/MedicAlert-FirstResponderAPI",
+  "url": "https://standards.medicalert.nz/ns/medicalert/CapabilityStatement/MedicAlert-FirstResponderAPI",
   "version": "0.1.0",
   "name": "MedicAlertIpsServerCapabilityStatement",
   "title": "MedicAlert IPS Server Capability Statement",

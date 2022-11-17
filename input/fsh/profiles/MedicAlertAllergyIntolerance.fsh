@@ -8,5 +8,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * ^version = "0.1.0"
 * ^status = #active
 * ^publisher = "MedicAlert"
+* ^url = "https://standards.medicalert.nz/ns/MaAllergyIntolerance"
 
-* meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required)
+* meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required) 
+* meta.tag MS

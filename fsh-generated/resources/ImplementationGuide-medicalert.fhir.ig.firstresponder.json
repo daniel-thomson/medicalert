@@ -1,19 +1,19 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "tewhatuora.fhir.ig.medicalert",
-  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/ImplementationGuide/tewhatuora.fhir.ig.medicalert",
+  "id": "medicalert.fhir.ig.firstresponder",
+  "url": "https://standards.medicalert.nz/ns/medicalert/ImplementationGuide/medicalert.fhir.ig.firstresponder",
   "version": "0.1.0",
   "name": "MedicAlert",
   "title": "MedicAlert First Responder API FHIR IG",
   "status": "draft",
-  "publisher": "Te Whatu Ora",
+  "publisher": "MedicAlert",
   "contact": [
     {
-      "name": "Te Whatu Ora",
+      "name": "MedicAlert",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.tewhatuora.govt.nz/"
+          "value": "https://medicalert.nz/"
         }
       ]
     }
@@ -29,7 +29,7 @@
       ]
     }
   ],
-  "packageId": "tewhatuora.fhir.ig.medicalert",
+  "packageId": "medicalert.fhir.ig.firstresponder",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"

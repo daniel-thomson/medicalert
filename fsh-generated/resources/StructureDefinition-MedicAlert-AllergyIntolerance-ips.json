@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MedicAlert-AllergyIntolerance-ips",
-  "url": "https://tewhatuora.govt.nz/fhir/ig/medicalert/StructureDefinition/MedicAlert-AllergyIntolerance-ips",
+  "url": "https://standards.medicalert.nz/ns/MaAllergyIntolerance",
   "version": "0.1.0",
   "name": "MedicAlertAllergyIntoleranceIps",
   "title": "MedicAlert AllergyIntolerance (IPS)",
@@ -36,6 +36,7 @@
       {
         "id": "AllergyIntolerance.meta.tag",
         "path": "AllergyIntolerance.meta.tag",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"

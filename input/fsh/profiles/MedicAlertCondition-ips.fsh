@@ -8,4 +8,5 @@ Description: """This profile represents the constraints applied to the Condition
 * ^publisher = "MedicAlert"
 * ^url = "https://standards.medicalert.nz/ns/MaCondition"
 
-* meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required)
+* meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required) 
+* meta.tag MS

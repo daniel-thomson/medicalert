@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MedicAlert-patient-summary-bundle-ips",
-  "url": "https://standards.medicalert.nz/ns/MaBundle",
+  "url": "https://standards.medicalert.nz/ns/MaPatientSummaryBundle",
   "version": "0.1.0",
   "name": "MedicAlertPatientSummaryBundle",
   "title": "MedicAlert Patient Summary Bundle",
