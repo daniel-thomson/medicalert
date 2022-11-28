@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "member-status-warning",
-  "url": "https://standards.medicalert.nz/ns/MemberStatusWarning",
+  "id": "ma-allergy-intolerance-warning-type",
+  "url": "https://standards.medicalert.nz/ns/MaAllergyIntoleranceWarningType",
   "version": "0.1.0",
-  "name": "MemberWarningStatus",
+  "name": "MaAllergyIntoleranceWarningType",
   "status": "active",
-  "date": "2020-11-10",
+  "date": "2022-11-10",
   "publisher": "MedicAlert",
-  "description": "ModifierExtension for warnings about member status. The status may alter the interpretation, or warn about the currency or accuracy of information in the patient summary",
+  "description": "Extension on AllergyIntolerance for extra codes to indicate the MedicAlert assigned type of warning",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -21,7 +21,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Composition"
+      "expression": "AllergyIntolerance"
     }
   ],
   "type": "Extension",
@@ -32,10 +32,10 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "ModifierExtension for warnings about member status. The status may alter the interpretation, or warn about the currency or accuracy of information in the patient summary",
+        "definition": "Extension on AllergyIntolerance for extra codes to indicate the MedicAlert assigned type of warning",
         "max": "1",
         "isModifier": true,
-        "isModifierReason": "Status or age of information may alter interpretation or reliability of patient summary"
+        "isModifierReason": "Information that does not fit the strict defintions of the AllergyIntoleranceType may be included in this resource, therefore this element is needed to communicate they type of information contained"
       },
       {
         "id": "Extension.extension",
@@ -45,7 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://standards.medicalert.nz/ns/MemberStatusWarning"
+        "fixedUri": "https://standards.medicalert.nz/ns/MaAllergyIntoleranceWarningType"
       },
       {
         "id": "Extension.value[x]",
@@ -62,7 +62,7 @@
         "path": "Extension.value[x].code",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.medicalert.nz/ValueSet/MemberStatusWarning"
+          "valueSet": "https://standards.medicalert.nz/ValueSet/MaAllergyIntoleranceWarningType"
         }
       }
     ]

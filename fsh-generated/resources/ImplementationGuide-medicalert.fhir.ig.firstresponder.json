@@ -70,6 +70,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MedicAlert-MedicationStatement-ips"
+        },
+        "name": "MedicAlert MedicationStatement",
+        "description": "This profile represents the constraints applied to MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/MedicAlert-patient-ips"
         },
         "name": "MedicAlert Patient (IPS)",
@@ -82,6 +90,14 @@
         },
         "name": "MedicAlert Patient Summary Bundle",
         "description": "MedicAlert profile on the Bundle resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ma-allergy-intolerance-warning-type"
+        },
+        "name": "MaAllergyIntoleranceWarningType",
+        "description": "Extension on AllergyIntolerance for extra codes to indicate the MedicAlert assigned type of warning",
         "exampleBoolean": false
       },
       {
@@ -110,6 +126,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ma-allergyintolerance-warning-type-vs"
+        },
+        "name": "MA AllergyIntolerance Warning Type ValueSet",
+        "description": "MedicAlert AllergyIntolerance types to add to existing type codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/member-status-warning-valueset"
         },
         "name": "Member Status Warning Codes",
@@ -130,6 +154,14 @@
         },
         "name": "MedicAlertRiskRatings",
         "description": "Risk rating valueset for tags",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ma-allergyintolerance-warning-type-cs"
+        },
+        "name": "MA AllergyIntolerance Warning Type CodeSystem",
+        "description": "MedicAlert AllergyIntolerance types to add to existing type codes",
         "exampleBoolean": false
       },
       {

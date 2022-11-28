@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MedicAlert-composition-ips",
-  "url": "https://standards.medicalert.nz/MAPatientSummaryComposition",
+  "url": "https://standards.medicalert.nz/ns/MAPatientSummaryComposition",
   "version": "0.1.0",
   "name": "MedicAlertCompositionIps",
   "title": "MedicAlert Composition (IPS)",

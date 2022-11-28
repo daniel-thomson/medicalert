@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MaAllergyIntoleranceWarningType",
+  "id": "ma-allergyintolerance-warning-type-vs",
+  "title": "MA AllergyIntolerance Warning Type ValueSet",
+  "description": "MedicAlert AllergyIntolerance types to add to existing type codes",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/ValueSet/MaAllergyIntoleranceWarningType",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.medicalert.nz/CodeSystem/MaAllergyIntoleranceWarningType"
+      }
+    ]
+  }
+}

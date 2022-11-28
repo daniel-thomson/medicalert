@@ -12,7 +12,43 @@
     {
       "code": "Foundation Member",
       "display": "Foundation Member"
+    },
+    {
+      "code": "Lapsed Member",
+      "display": "ALL EMERGENCY PERSONNEL SHOULD PROCEED WITH CAUTION AS INFORMATION HELD ON THIS FILE CAN NOT BE VERIFIED"
+    },
+    {
+      "code": "Deceased",
+      "display": "ALL EMERGENCY PERSONNEL BEWARE, THE BRACELET DISPLAYING THIS MEMBERSHIP NUMBER IS BEING WORN BY A PERSON NOTIFIED TO MEDICALERT AS HAVING DIED!"
+    },
+    {
+      "code": "Uncontactable Foundation Member",
+      "display": "ALL EMERGENCY PERSONNEL SHOULD PROCEED WITH CAUTION AS INFORMATION HELD ON THIS FILE CAN NOT BE VERIFIED"
+    },
+    {
+      "code": "Uncontactable Service Member",
+      "display": "ALL EMERGENCY PERSONNEL SHOULD PROCEED WITH CAUTION AS INFORMATION HELD ON THIS FILE CAN NOT BE VERIFIED"
+    },
+    {
+      "code": "Uncontactable Unfinancial Service Member",
+      "display": "ALL EMERGENCY PERSONNEL SHOULD PROCEED WITH CAUTION AS INFORMATION HELD ON THIS FILE CAN NOT BE VERIFIED"
+    },
+    {
+      "code": "Deferred Member",
+      "display": "Defferred Member"
+    },
+    {
+      "code": "Resigned",
+      "display": "ALL EMERGENCY PERSONNEL SHOULD PROCEED WITH CAUTION AS INFORMATION HELD ON THIS FILE CAN NOT BE VERIFIED"
+    },
+    {
+      "code": "New Member Enrolment",
+      "display": "ALL EMERGENCY PERSONNEL SHOULD PROCEED WITH CAUTION AS INFORMATION HELD ON THIS FILE CAN NOT BE VERIFIED"
+    },
+    {
+      "code": "Closed",
+      "display": "ALL EMERGENCY PERSONNEL SHOULD PROCEED WITH CAUTION AS INFORMATION HELD ON THIS FILE CAN NOT BE VERIFIED"
     }
   ],
-  "count": 1
+  "count": 10
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "MedicAlertSummary",
-  "url": "https://standards.medicalert.nz/MedicAlertSummary",
+  "url": "https://standards.medicalert.nz/ns/MedicAlertSummary",
   "version": "1.0.0",
   "name": "MedicAlertPatientSummary",
   "title": "MedicAlert Patient Summary",

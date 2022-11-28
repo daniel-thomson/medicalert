@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MaAllergyIntoleranceWarningType",
+  "id": "ma-allergyintolerance-warning-type-cs",
+  "title": "MA AllergyIntolerance Warning Type CodeSystem",
+  "description": "MedicAlert AllergyIntolerance types to add to existing type codes",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/CodeSystem/MaAllergyIntoleranceWarningType",
+  "concept": [
+    {
+      "code": "Allergy",
+      "display": "Allergy"
+    },
+    {
+      "code": "Warning",
+      "display": "Warning"
+    },
+    {
+      "code": "Intolerance",
+      "display": "Intolerance"
+    }
+  ],
+  "count": 3
+}

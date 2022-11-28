@@ -12,3 +12,6 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 
 * meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required) 
 * meta.tag MS
+
+
+* modifierExtension contains https://standards.medicalert.nz/ns/MaAllergyIntoleranceWarningType named MaAllergyIntoleranceWarningType 1..1
