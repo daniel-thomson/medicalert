@@ -70,10 +70,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MedicAlert-Location"
+        },
+        "name": "MedicAlert Location",
+        "description": "This profile represents the constraints applied to Location resource by the MedicAlert Location profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/MedicAlert-MedicationStatement-ips"
         },
-        "name": "MedicAlert MedicationStatement",
-        "description": "This profile represents the constraints applied to MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.",
+        "name": "MedicAlert MedicationStatement (IPS)",
+        "description": "This profile represents the constraints applied to the MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-Organization"
+        },
+        "name": "MedicAlert Organization (IPS)",
+        "description": "This profile represents the constraints applied to Organization resource by the MedicAlert Organization profile, based on the International Patient Summary (IPS) FHIR Implementation Guide.",
         "exampleBoolean": false
       },
       {
@@ -90,6 +106,22 @@
         },
         "name": "MedicAlert Patient Summary Bundle",
         "description": "MedicAlert profile on the Bundle resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-Practitioner"
+        },
+        "name": "MedicAlert Practitioner (IPS)",
+        "description": "This profile represents the constraints applied to Practitioner resource by the MedicAlert Practitioner profile, based on the International Patient Summary (IPS) FHIR Implementation Guide.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-PractitionerRole"
+        },
+        "name": "MedicAlert PractitionerRole (IPS)",
+        "description": "This profile represents the constraints applied to PractitionerRole resource by the MedicAlert PractitionerRole profile, based on the International Patient Summary (IPS) FHIR Implementation Guide.",
         "exampleBoolean": false
       },
       {

@@ -4,10 +4,10 @@
   "url": "https://standards.medicalert.nz/ns/MaMedicationStatement",
   "version": "0.1.0",
   "name": "MedicAlertMedicationStatement",
-  "title": "MedicAlert MedicationStatement",
+  "title": "MedicAlert MedicationStatement (IPS)",
   "status": "active",
   "publisher": "MedicAlert",
-  "description": "This profile represents the constraints applied to MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.",
+  "description": "This profile represents the constraints applied to the MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

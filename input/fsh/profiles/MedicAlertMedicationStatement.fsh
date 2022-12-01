@@ -1,8 +1,8 @@
 Profile: MedicAlertMedicationStatement
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips
 Id: MedicAlert-MedicationStatement-ips
-Title: "MedicAlert MedicationStatement"
-Description: """This profile represents the constraints applied to MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.
+Title: "MedicAlert MedicationStatement (IPS)"
+Description: """This profile represents the constraints applied to the MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.
 """
 * ^version = "0.1.0"
 * ^status = #active
@@ -12,5 +12,3 @@ Description: """This profile represents the constraints applied to MedicationSta
 * meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required) 
 * meta.tag MS
 
-
-// * modifierExtension contains https://standards.medicalert.nz/ns/MaAllergyIntoleranceWarningType named MaAllergyIntoleranceWarningType 1..1

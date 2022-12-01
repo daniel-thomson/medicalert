@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicAlert-Organization",
+  "url": "https://standards.medicalert.nz/ns/MaOrganization",
+  "version": "0.1.0",
+  "name": "MedicAlertOrganization",
+  "title": "MedicAlert Organization (IPS)",
+  "status": "active",
+  "publisher": "MedicAlert",
+  "description": "This profile represents the constraints applied to Organization resource by the MedicAlert Organization profile, based on the International Patient Summary (IPS) FHIR Implementation Guide.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier:orgId",
+        "path": "Organization.identifier",
+        "sliceName": "orgId",
+        "short": "The HPI organization Id for this Organization",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier:orgId.system",
+        "path": "Organization.identifier.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-organisation-id"
+      }
+    ]
+  }
+}
