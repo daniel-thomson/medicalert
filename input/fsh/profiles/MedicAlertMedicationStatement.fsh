@@ -12,3 +12,11 @@ Description: """This profile represents the constraints applied to the Medicatio
 * meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required) 
 * meta.tag MS
 
+* medicationCodeableConcept.coding ^slicing.discriminator.type = #value
+* medicationCodeableConcept.coding ^slicing.discriminator.path = "system"
+* medicationCodeableConcept.coding ^slicing.rules = #open
+* medicationCodeableConcept.coding contains
+    SNOMED-CT 0..* and
+    NZMT 0..*
+* medicationCodeableConcept.coding[SNOMED-CT].system = "http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips" (exactly)
+* medicationCodeableConcept.coding[NZMT].system = "https://standards.digital.health.nz/fhir/ValueSet/nzf-nzmt" (exactly)

@@ -46,6 +46,59 @@
           "strength": "required",
           "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"
         }
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept",
+        "path": "MedicationStatement.medicationCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding",
+        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding:SNOMED-CT",
+        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding:SNOMED-CT.system",
+        "path": "MedicationStatement.medicationCodeableConcept.coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips"
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding:NZMT",
+        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "sliceName": "NZMT",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding:NZMT.system",
+        "path": "MedicationStatement.medicationCodeableConcept.coding.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/fhir/ValueSet/nzf-nzmt"
       }
     ]
   }
