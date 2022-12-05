@@ -126,6 +126,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MedicAlert-flag-warning"
+        },
+        "name": "MedicAlert Warning",
+        "description": "This profile represents warnings that MedicAlert holds for a patient that do not fit into other resources defined in the IPS. It is based on the Flag resource ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ma-allergy-intolerance-warning-type"
         },
         "name": "MaAllergyIntoleranceWarningType",
