@@ -19,4 +19,4 @@ Description: """This profile represents the constraints applied to the Medicatio
     SNOMED-CT 0..* and
     NZMT 0..*
 * medicationCodeableConcept.coding[SNOMED-CT].system = "http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips" (exactly)
-* medicationCodeableConcept.coding[NZMT].system = "https://standards.digital.health.nz/fhir/ValueSet/nzf-nzmt" (exactly)
+* medicationCodeableConcept.coding[NZMT].system = "http://nzmt.org.nz/vs" (exactly)

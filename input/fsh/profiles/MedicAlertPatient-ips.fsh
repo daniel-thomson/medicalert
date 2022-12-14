@@ -13,7 +13,7 @@ Description: """This profile represents the constraints applied to the Patient r
 * modifierExtension 0..0
 * photo 0..0
 * multipleBirth[x] 0..0
-* generalPractitioner 0..0
+// * generalPractitioner 0..0
 * link 0..0
 
 // slices for MA + NHI identifiers
@@ -23,7 +23,7 @@ Description: """This profile represents the constraints applied to the Patient r
 * identifier ^slicing.discriminator[1].type = #value
 * identifier ^slicing.discriminator[1].path = "system"
 
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
 * identifier ^slicing.description = "MedicAlert member id and NHI number"
 
 * identifier contains NHI 0..1 MS and MedicAlertID 0..1 MS
@@ -39,3 +39,4 @@ Description: """This profile represents the constraints applied to the Patient r
 * identifier[NHI].period 0..0
 * identifier[NHI] ^short = "NHI number"
 * identifier[NHI] ^definition = "The National Health Index (NHI) number for the patient"
+

@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicAlert-procedure-ips",
+  "url": "https://standards.medicalert.nz/ns/MaProcedure",
+  "version": "0.1.0",
+  "name": "MedicAlertProcedureIps",
+  "title": "MedicAlert Procedure (IPS)",
+  "status": "active",
+  "publisher": "MedicAlert",
+  "description": "This profile represents the constraints applied to the Procedure resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide. The Procedure resource specifies an entry of the History of Procedure section of the MedicAlert Composition.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.meta.tag",
+        "path": "Procedure.meta.tag",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"
+        }
+      }
+    ]
+  }
+}

@@ -67,7 +67,7 @@
               "path": "system"
             }
           ],
-          "rules": "openAtEnd",
+          "rules": "open",
           "description": "MedicAlert member id and NHI number"
         }
       },

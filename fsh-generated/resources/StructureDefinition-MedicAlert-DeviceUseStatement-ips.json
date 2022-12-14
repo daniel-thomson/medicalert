@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicAlert-DeviceUseStatement-ips",
+  "url": "https://standards.medicalert.nz/ns/DeviceUseStatement",
+  "version": "0.1.0",
+  "name": "MedicAlertDeviceUseStatementIps",
+  "title": "MedicAlert DeviceUseStatement (IPS)",
+  "status": "active",
+  "publisher": "MedicAlert",
+  "description": "This profile represents the constraints applied to the DeviceUseStatement resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide. The usage of a Device by a patient is represented in the MedicAlert patient summary as an instance of the DeviceUseStatement resource constrained by this profile.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "quick",
+      "uri": "http://siframework.org/cqf",
+      "name": "Quality Improvement and Clinical Knowledge (QUICK)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceUseStatement",
+  "baseDefinition": "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceUseStatement.meta.tag",
+        "path": "DeviceUseStatement.meta.tag",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"
+        }
+      }
+    ]
+  }
+}

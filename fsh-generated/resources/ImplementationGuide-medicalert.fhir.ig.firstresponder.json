@@ -70,6 +70,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MedicAlert-device-ips"
+        },
+        "name": "MedicAlert Device (IPS)",
+        "description": "This profile represents the constraints applied to the Device resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of a device is represented in the patient summary as an instance of the device resource constrained by this profile. In almost all cases a Device resource will be referenced from a DeviceUseStatement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-DeviceUseStatement-ips"
+        },
+        "name": "MedicAlert DeviceUseStatement (IPS)",
+        "description": "This profile represents the constraints applied to the DeviceUseStatement resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide. The usage of a Device by a patient is represented in the MedicAlert patient summary as an instance of the DeviceUseStatement resource constrained by this profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/MedicAlert-Location"
         },
         "name": "MedicAlert Location",
@@ -122,6 +138,14 @@
         },
         "name": "MedicAlert PractitionerRole (IPS)",
         "description": "This profile represents the constraints applied to PractitionerRole resource by the MedicAlert PractitionerRole profile, based on the International Patient Summary (IPS) FHIR Implementation Guide.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-procedure-ips"
+        },
+        "name": "MedicAlert Procedure (IPS)",
+        "description": "This profile represents the constraints applied to the Procedure resource by the MedicAlert Patient Summary based on the International Patient Summary (IPS) FHIR Implementation Guide. The Procedure resource specifies an entry of the History of Procedure section of the MedicAlert Composition.",
         "exampleBoolean": false
       },
       {
