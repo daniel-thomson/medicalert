@@ -134,11 +134,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.generalPractitioner",
-        "path": "Patient.generalPractitioner",
-        "max": "0"
-      },
-      {
         "id": "Patient.link",
         "path": "Patient.link",
         "max": "0"

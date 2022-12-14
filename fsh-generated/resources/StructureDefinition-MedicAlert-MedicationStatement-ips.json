@@ -98,7 +98,7 @@
         "id": "MedicationStatement.medicationCodeableConcept.coding:NZMT.system",
         "path": "MedicationStatement.medicationCodeableConcept.coding.system",
         "min": 1,
-        "fixedUri": "https://standards.digital.health.nz/fhir/ValueSet/nzf-nzmt"
+        "fixedUri": "http://nzmt.org.nz/vs"
       }
     ]
   }
