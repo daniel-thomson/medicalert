@@ -15,7 +15,7 @@ Usage: #definition
 * title = "MedicAlert IPS Server Capability Statement"
 * status = #draft
 * experimental = false
-* date = "2022-10-10T13:15:56.964-00:00"
+* date = "2022-12-12T13:15:56.964-00:00"
 * publisher = "MedicAlert"
 //* contact.telecom.system = #url
 //* contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
