@@ -46,6 +46,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/MedicAlert-advance-directive"
+        },
+        "name": "MedicAlert AdvanceDirective",
+        "description": "This profile represents advance directives that MedicAlert holds for a patient based on the consent resource. The consent resource will reference a DocumentReference that contains a link to the original PDF of the AdvanceDirective document ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/MedicAlert-AllergyIntolerance-ips"
         },
         "name": "MedicAlert AllergyIntolerance (IPS)",
@@ -86,6 +94,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MedicAlert-document-reference"
+        },
+        "name": "MedicAlert DocumentReference",
+        "description": "This is a profile on the DocumentReference resource. It is used to link resources (such as Advance Directives) to a copy of the original document (usually in PDF format), that a resource is based on. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/MedicAlert-Location"
         },
         "name": "MedicAlert Location",
@@ -98,6 +114,14 @@
         },
         "name": "MedicAlert MedicationStatement (IPS)",
         "description": "This profile represents the constraints applied to the MedicationStatement resource by the MedicAlert MedicationStatement profile based on the International Patient Summary (IPS) FHIR Implementation Guide. A record of medication being taken is represented in the patient summary as an instance of an MedicationStatement resource constrained by this profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicAlert-observation-results-lab"
+        },
+        "name": "MedicAlert Observation Results: Laboratory",
+        "description": "This profile is based on the IPS observation results profile for lab results. It will be used to return blood group information, in addition to other lab results. ",
         "exampleBoolean": false
       },
       {
@@ -153,7 +177,7 @@
           "reference": "StructureDefinition/MedicAlert-flag-warning"
         },
         "name": "MedicAlert Warning",
-        "description": "This profile represents warnings that MedicAlert holds for a patient that do not fit into other resources defined in the IPS. It is based on the Flag resource ",
+        "description": "This profile represents warnings that MedicAlert holds for a patient that do not fit into other resources defined in the IPS or to highlight important warnings within the patient summary. Where used to highlight an important warning, the flag-detail extension will reference the resource that contains the full information about the warning.  It is based on the Flag resource ",
         "exampleBoolean": false
       },
       {
@@ -170,6 +194,14 @@
         },
         "name": "MemberWarningStatus",
         "description": "ModifierExtension for warnings about member status. The status may alter the interpretation, or warn about the currency or accuracy of information in the patient summary",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ma-note"
+        },
+        "name": "Note",
+        "description": "Text extension to contain information where coded values aren't provided or appropriate",
         "exampleBoolean": false
       },
       {

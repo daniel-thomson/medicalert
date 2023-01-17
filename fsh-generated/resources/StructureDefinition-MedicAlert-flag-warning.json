@@ -17,7 +17,7 @@
   "title": "MedicAlert Warning",
   "status": "active",
   "publisher": "MedicAlert",
-  "description": "This profile represents warnings that MedicAlert holds for a patient that do not fit into other resources defined in the IPS. It is based on the Flag resource ",
+  "description": "This profile represents warnings that MedicAlert holds for a patient that do not fit into other resources defined in the IPS or to highlight important warnings within the patient summary. Where used to highlight an important warning, the flag-detail extension will reference the resource that contains the full information about the warning.  It is based on the Flag resource ",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,6 +46,50 @@
           "strength": "required",
           "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"
         }
+      },
+      {
+        "id": "Flag.extension",
+        "path": "Flag.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Flag.extension:flagDetail",
+        "path": "Flag.extension",
+        "sliceName": "flagDetail",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/flag-detail"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:note",
+        "path": "Flag.extension",
+        "sliceName": "note",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.medicalert.nz/ns/note"
+            ]
+          }
+        ]
       }
     ]
   }
