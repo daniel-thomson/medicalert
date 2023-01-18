@@ -46,7 +46,30 @@
       {
         "id": "Patient.contained",
         "path": "Patient.contained",
-        "max": "0"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open",
+          "description": "Slicing to specifiy PractitionerRole resource may be returned to hold the Patient's General Practitioner"
+        }
+      },
+      {
+        "id": "Patient.contained:GP",
+        "path": "Patient.contained",
+        "sliceName": "GP",
+        "short": "Patient's GP",
+        "definition": "Contained resource for the patient's GP's practitionerRole",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "PractitionerRole"
+          }
+        ]
       },
       {
         "id": "Patient.modifierExtension",
