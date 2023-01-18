@@ -40,15 +40,3 @@ Description: """This profile represents the constraints applied to the Patient r
 * identifier[NHI] ^short = "NHI number"
 * identifier[NHI] ^definition = "The National Health Index (NHI) number for the patient"
 
-// slice for contained practitionerRole
-
-* contained ^slicing.discriminator.type = #type
-* contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #open
-* contained ^slicing.description = "Slicing to specifiy PractitionerRole resource may be returned to hold the Patient's General Practitioner"
-* contained contains GP 0..1
-* contained[GP] only http://hl7.org/fhir/StructureDefinition/PractitionerRole
-* contained[GP] ^short = "Patient's GP"
-* contained[GP] ^definition = "Contained resource for the patient's GP's practitionerRole"
-
-
