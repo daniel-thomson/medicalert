@@ -17,153 +17,98 @@ Usage: #definition
 * experimental = false
 * date = "2022-12-12T13:15:56.964-00:00"
 * publisher = "MedicAlert"
-//* contact.telecom.system = #url
-//* contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
-* description = "This describes the expected capabilities of the MedicAlert IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The list of FHIR profiles and operations supported by IPS Servers are defined."
+* contact.telecom.system = #url
+* contact.telecom.value = "http://www.medicalert.nz"
+* description = "This describes the expected capabilities of the MedicAlert IPS Server which is responsible for providing responses to the queries submitted for patient summary documents. The list of FHIR profiles and operations supported by the server are defined."
 // * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 // * copyright = "Used by permission of HL7 International, all rights reserved Creative Commons License"
-* kind = #requirements
+* kind = #instance
 * fhirVersion = #4.0.1
 //* format[0] = #application/fhir+xml
 //* format[+] = #xml
 * format[+] = #application/fhir+json
 * format[+] = #json
 * rest.mode = #server
+
+// bundle
 * rest.resource[0].type = #Bundle
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Bundle"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHALL
-
-// update to our composition if profiled
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaPatientSummaryBundle"
+// composition
 * rest.resource[+].type = #Composition
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Composition"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHALL
-
-// update to our patient once modified
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaPatientSummaryComposition"
+// patient 
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Patient"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHALL
-* rest.resource[=].operation.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].operation.extension.valueCode = #SHOULD
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaPatient"
+// $summary operation
 * rest.resource[=].operation.name = "summary"
-* rest.resource[=].operation.definition = "http://hl7.org/fhir/uv/ips/OperationDefinition/summary"
+* rest.resource[=].operation.definition = "https://standards.medicalert.nz/ns/MedicAlertSummary"
+// allergyIntolerance
 * rest.resource[+].type = #AllergyIntolerance
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaAllergyIntolerance"
+// condition
 * rest.resource[+].type = #Condition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Condition"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-//* rest.resource[+].type = #Device
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Device"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-//* rest.resource[+].type = #DeviceUseStatement
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
+// device
+* rest.resource[+].type = #Device
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaDevice"
+// deviceUseStatement
+* rest.resource[+].type = #DeviceUseStatement
+* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"
 //* rest.resource[+].type = #DiagnosticReport
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 //* rest.resource[+].type = #ImagingStudy
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 //* rest.resource[+].type = #Immunization
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Immunization"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 //* rest.resource[+].type = #Media
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Media"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 //* rest.resource[+].type = #Medication
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Medication"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-///* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 //* rest.resource[+].type = #MedicationRequest
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-//* rest.resource[+].type = #MedicationStatement
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-//* rest.resource[+].type = #Observation
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Observation"
+// MedicationStatement
+* rest.resource[+].type = #MedicationStatement
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaMedicationStatement"
+// Observation / obs lab
+* rest.resource[+].type = #Observation
+* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Observation"
 //* rest.resource[=].supportedProfile[0] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"
 //* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"
 //* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"
 //* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
 //* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"
-//* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"
+// observation results lab (initially blood group)
+* rest.resource[=].supportedProfile[+] = "https://standards.medicalert.nz/ns/MaObservationResultsLaboratory"
 //* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"
-//* rest.resource[=].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
-//* rest.resource[=].supportedProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
-//* rest.resource[=].supportedProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
-//* rest.resource[=].supportedProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
-//* rest.resource[=].supportedProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
-//* rest.resource[=].supportedProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
-//* rest.resource[=].supportedProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
-//* rest.resource[+].type = #Organization
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Organization"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-//* rest.resource[+].type = #Practitioner
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Practitioner"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-//* rest.resource[+].type = #PractitionerRole
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
+// organization
+* rest.resource[+].type = #Organization
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaOrganization"
+// practitioner
+* rest.resource[+].type = #Practitioner
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaPractitioner"
+// prac role
+* rest.resource[+].type = #PractitionerRole
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaPractitionerRole"
+// location
+* rest.resource[+].type = #Location
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaLocation"
+// procedure
 * rest.resource[+].type = #Procedure
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Procedure"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaProcedure"
 //* rest.resource[+].type = #Specimen
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Specimen"
-//* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"
-//* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-//* rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].extension.valueCode = #SHOULD
-//* rest.resource[=].type = #DocumentReference
-//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DocumentReference"
-//* rest.resource[=].operation.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-//* rest.resource[=].operation.extension.valueCode = #SHOULD
+// DocRef
+* rest.resource[+].type = #DocumentReference
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaDocumentReference"
 //* rest.resource[=].operation.name = "docref"
 //* rest.resource[=].operation.definition = "http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref"
-* rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].extension.valueCode = #SHOULD
-* rest.resource[=].type = #OperationDefinition
+// flag / warning
+* rest.resource[+].type = #Flag
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaDocumentReference"
+// advanceDirective
+* rest.resource[+].type = #Consent
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaWarning"
+
+// for if we return our revised operation
+* rest.resource[+].type = #OperationDefinition
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
