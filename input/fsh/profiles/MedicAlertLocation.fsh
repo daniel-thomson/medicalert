@@ -23,3 +23,5 @@ Description: """This profile represents the constraints applied to Location reso
 //* identifier[facId].type 0..0
 //* identifier[facId].period 0..0
 //* identifier[facId].assigner only Reference(HpiOrganization)
+
+* type from https://nzhts.digital.health.nz/fhir/ValueSet/location-type-code

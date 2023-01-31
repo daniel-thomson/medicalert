@@ -13,9 +13,9 @@ Usage: #definition
 * version = "0.1.0"
 * name = "MedicAlertIpsServerCapabilityStatement"
 * title = "MedicAlert IPS Server Capability Statement"
-* status = #draft
+* status = #active
 * experimental = false
-* date = "2022-12-12T13:15:56.964-00:00"
+* date = "2023-01-31T13:15:56.964-00:00"
 * publisher = "MedicAlert"
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.medicalert.nz"
@@ -47,13 +47,13 @@ Usage: #definition
 * rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaAllergyIntolerance"
 // condition
 * rest.resource[+].type = #Condition
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Condition"
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaCondition"
 // device
 * rest.resource[+].type = #Device
 * rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaDevice"
 // deviceUseStatement
 * rest.resource[+].type = #DeviceUseStatement
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"
+* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaDeviceUseStatement"
 //* rest.resource[+].type = #DiagnosticReport
 //* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
 //* rest.resource[+].type = #ImagingStudy
@@ -104,11 +104,11 @@ Usage: #definition
 //* rest.resource[=].operation.definition = "http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref"
 // flag / warning
 * rest.resource[+].type = #Flag
-* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaDocumentReference"
-// advanceDirective
-* rest.resource[+].type = #Consent
 * rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaWarning"
+// advanceDirective
+//* rest.resource[+].type = #Consent
+//* rest.resource[=].profile = "https://standards.medicalert.nz/ns/MaWarning"
 
 // for if we return our revised operation
-* rest.resource[+].type = #OperationDefinition
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
+//* rest.resource[+].type = #OperationDefinition
+//* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/OperationDefinition"

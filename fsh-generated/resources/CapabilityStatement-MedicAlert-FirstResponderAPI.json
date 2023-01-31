@@ -5,12 +5,22 @@
   "version": "0.1.0",
   "name": "MedicAlertIpsServerCapabilityStatement",
   "title": "MedicAlert IPS Server Capability Statement",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
-  "date": "2022-12-12T13:15:56.964-00:00",
+  "date": "2023-01-31T13:15:56.964-00:00",
   "publisher": "MedicAlert",
-  "description": "This describes the expected capabilities of the MedicAlert IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The list of FHIR profiles and operations supported by IPS Servers are defined.",
-  "kind": "requirements",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.medicalert.nz"
+        }
+      ]
+    }
+  ],
+  "description": "This describes the expected capabilities of the MedicAlert IPS Server which is responsible for providing responses to the queries submitted for patient summary documents. The list of FHIR profiles and operations supported by the server are defined.",
+  "kind": "instance",
   "fhirVersion": "4.0.1",
   "format": [
     "application/fhir+json",
@@ -22,127 +32,76 @@
       "resource": [
         {
           "type": "Bundle",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
-          ],
-          "_supportedProfile": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ]
+          "profile": "https://standards.medicalert.nz/ns/MaPatientSummaryBundle"
         },
         {
           "type": "Composition",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Composition",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"
-          ],
-          "_supportedProfile": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ]
+          "profile": "https://standards.medicalert.nz/ns/MaPatientSummaryComposition"
         },
         {
           "type": "Patient",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Patient",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
-          ],
-          "_supportedProfile": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
+          "profile": "https://standards.medicalert.nz/ns/MaPatient",
           "operation": [
             {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
               "name": "summary",
-              "definition": "http://hl7.org/fhir/uv/ips/OperationDefinition/summary"
+              "definition": "https://standards.medicalert.nz/ns/MedicAlertSummary"
             }
           ]
         },
         {
           "type": "AllergyIntolerance",
-          "profile": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
-          ],
-          "_supportedProfile": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ]
-            }
-          ]
+          "profile": "https://standards.medicalert.nz/ns/MaAllergyIntolerance"
         },
         {
           "type": "Condition",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Condition",
+          "profile": "https://standards.medicalert.nz/ns/MaCondition"
+        },
+        {
+          "type": "Device",
+          "profile": "https://standards.medicalert.nz/ns/MaDevice"
+        },
+        {
+          "type": "DeviceUseStatement",
+          "profile": "https://standards.medicalert.nz/ns/MaDeviceUseStatement"
+        },
+        {
+          "type": "MedicationStatement",
+          "profile": "https://standards.medicalert.nz/ns/MaMedicationStatement"
+        },
+        {
+          "type": "Observation",
+          "profile": "http://hl7.org/fhir/StructureDefinition/Observation",
           "supportedProfile": [
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
-          ],
-          "_supportedProfile": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ]
-            }
+            "https://standards.medicalert.nz/ns/MaObservationResultsLaboratory"
           ]
+        },
+        {
+          "type": "Organization",
+          "profile": "https://standards.medicalert.nz/ns/MaOrganization"
+        },
+        {
+          "type": "Practitioner",
+          "profile": "https://standards.medicalert.nz/ns/MaPractitioner"
+        },
+        {
+          "type": "PractitionerRole",
+          "profile": "https://standards.medicalert.nz/ns/MaPractitionerRole"
+        },
+        {
+          "type": "Location",
+          "profile": "https://standards.medicalert.nz/ns/MaLocation"
         },
         {
           "type": "Procedure",
-          "profile": "http://hl7.org/fhir/StructureDefinition/Procedure",
-          "supportedProfile": [
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
-          ],
-          "_supportedProfile": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ]
-            }
-          ]
+          "profile": "https://standards.medicalert.nz/ns/MaProcedure"
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHOULD"
-            }
-          ],
-          "type": "OperationDefinition",
-          "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
+          "type": "DocumentReference",
+          "profile": "https://standards.medicalert.nz/ns/MaDocumentReference"
+        },
+        {
+          "type": "Flag",
+          "profile": "https://standards.medicalert.nz/ns/MaWarning"
         }
       ]
     }

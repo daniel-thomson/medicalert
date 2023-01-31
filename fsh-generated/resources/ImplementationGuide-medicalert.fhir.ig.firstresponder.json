@@ -206,6 +206,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nzeps-long-term-medication"
+        },
+        "name": "NZePS Long Term Medication Indicator",
+        "description": "NZePS Long Term Medication Indicator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/access-reason-vs"
         },
         "name": "MedicAlert Access Reason ValueSet",

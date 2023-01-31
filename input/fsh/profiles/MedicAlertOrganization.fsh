@@ -22,3 +22,5 @@ Description: """This profile represents the constraints applied to Organization 
 //* identifier[orgId].type 0..0
 //* identifier[orgId].period 0..0
 //* identifier[orgId].assigner only Reference(HpiOrganization)
+
+* type from https://nzhts.digital.health.nz/fhir/ValueSet/organisation-type-code

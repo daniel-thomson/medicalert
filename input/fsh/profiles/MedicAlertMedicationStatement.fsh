@@ -20,3 +20,6 @@ Description: """This profile represents the constraints applied to the Medicatio
     NZMT 0..*
 * medicationCodeableConcept.coding[SNOMED-CT].system = "http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips" (exactly)
 * medicationCodeableConcept.coding[NZMT].system = "http://nzmt.org.nz/vs" (exactly)
+
+* extension contains
+    http://hl7.org.nz/fhir/StructureDefinition/nzeps-long-term-medication named nzeps-long-term-medication 0..1

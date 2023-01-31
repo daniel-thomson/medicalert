@@ -66,6 +66,14 @@
         "path": "Location.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-facility-id"
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/location-type-code"
+        }
       }
     ]
   }
