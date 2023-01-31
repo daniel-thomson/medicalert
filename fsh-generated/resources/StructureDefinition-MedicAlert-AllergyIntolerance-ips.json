@@ -41,36 +41,6 @@
           "strength": "required",
           "valueSet": "https://standards.medicalert.nz/ValueSet/RiskRating"
         }
-      },
-      {
-        "id": "AllergyIntolerance.modifierExtension",
-        "path": "AllergyIntolerance.modifierExtension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "AllergyIntolerance.modifierExtension:MaAllergyIntoleranceWarningType",
-        "path": "AllergyIntolerance.modifierExtension",
-        "sliceName": "MaAllergyIntoleranceWarningType",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://standards.medicalert.nz/ns/MaAllergyIntoleranceWarningType"
-            ]
-          }
-        ]
       }
     ]
   }
