@@ -34,6 +34,14 @@ Content-Type: application/x-www-form-urlencoded
 
 _identifier=https://standards.medicalert.nz/memberId/1001&reason=NonEmergencyAccess
 ```
+An example query for emergency access using an accessKey:
+```
+POST [base]/Patient/$summary
+Content-Type: application/x-www-form-urlencoded
+
+_identifier=https://standards.medicalert.nz/accessKey/10011XX1&reason=EmergencyAccess
+```
+
 
 (note that non-standard ASCII characters such as the '|' character must be URL encoded)"
 * affectsState = false
@@ -46,7 +54,7 @@ _identifier=https://standards.medicalert.nz/memberId/1001&reason=NonEmergencyAcc
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Either the MedicAlert Member ID or a valid NHI number must be provided. This should be provided as the identifier system URI followed by the id, seperated by a pipe character"
+* parameter[=].documentation = "Either the MedicAlert Member ID, valid NHI number, or valed accessKey must be provided. This should be provided as the identifier system URI followed by the id, seperated by a pipe character"
 * parameter[=].type = #Identifier
 
 //* parameter[+].name = #profile
