@@ -32,18 +32,18 @@ An example query for non emergency access using the MedicAlert id:
 POST [base]/Patient/$summary
 Content-Type: application/x-www-form-urlencoded
 
-_identifier=https://standards.medicalert.nz/memberId/1001&reason=NonEmergencyAccess
+_identifier=https://standards.medicalert.nz/memberId%7C1001&reason=NonEmergencyAccess
 ```
 An example query for emergency access using an accessKey:
 ```
 POST [base]/Patient/$summary
 Content-Type: application/x-www-form-urlencoded
 
-_identifier=https://standards.medicalert.nz/accessKey/10011XX1&reason=EmergencyAccess
+_identifier=https://standards.medicalert.nz/accessKey%7C10011XX1&reason=EmergencyAccess
 ```
 
 
-(note that non-standard ASCII characters such as the '|' character must be URL encoded)"
+(note that non-standard ASCII characters such as the | character must be URL encoded - in this case as %7C)"
 * affectsState = false
 * code = #summary
 * resource = #Patient
