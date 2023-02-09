@@ -15,3 +15,41 @@ This profile is based on the ClinicalDocument profile."""
 
 * modifierExtension contains https://standards.medicalert.nz/ns/MemberStatusWarning named MemberWarningStatus 1..1
 
+* section contains 
+    sectionWarnings 0..1 MS and 
+    sectionDocuments 0..1
+
+* section[sectionWarnings] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionWarnings] ^extension[=].valueString = "Section"
+* section[sectionWarnings] ^short = "Flags and Warnings Section"
+* section[sectionWarnings] ^definition = "Warnings that MedicAlert holds for a patient that do not fit into other resources in the patient summary or to highlight important resources within the summary."
+* section[sectionWarnings].title 1.. MS
+* section[sectionWarnings].code = http://loinc.org#74018-3
+* section[sectionWarnings].entry 1.. MS
+* section[sectionWarnings].entry only Reference(Flag)
+* section[sectionWarnings].entry ^slicing.discriminator[0].type = #profile
+* section[sectionWarnings].entry ^slicing.discriminator[=].path = "resolve()"
+* section[sectionWarnings].entry ^slicing.rules = #open
+* section[sectionWarnings].entry ^short = "Flags and Warnings for the patient"
+* section[sectionWarnings].entry ^definition = "Warnings that MedicAlert holds for a patient that do not fit into other resources in the patient summary or to highlight important resources within the summary"
+* section[sectionWarnings].entry contains warning 1..* MS
+* section[sectionWarnings].entry[warning] only Reference(https://standards.medicalert.nz/ns/MaWarning)
+
+* section[sectionDocuments] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionDocuments] ^extension[=].valueString = "Section"
+* section[sectionDocuments] ^short = "Documents Section"
+* section[sectionDocuments] ^definition = "used to link resources (such as Advance Directives and Emergency medical action plans) to a copy of the original document (in PDF format)."
+* section[sectionDocuments].title 1.. MS
+* section[sectionDocuments].code = http://loinc.org#51851-4
+* section[sectionDocuments].entry 1.. MS
+* section[sectionDocuments].entry only Reference(DocumentReference)
+* section[sectionDocuments].entry ^slicing.discriminator[0].type = #profile
+* section[sectionDocuments].entry ^slicing.discriminator[=].path = "resolve()"
+* section[sectionDocuments].entry ^slicing.rules = #open
+* section[sectionDocuments].entry ^short = "DocumentsReference resource with link to original documents"
+* section[sectionDocuments].entry ^definition = "used to link resources (such as Advance Directives and Emergency medical action plans) to a copy of the original document (in PDF format)"
+* section[sectionDocuments].entry contains documentReference 1..* MS
+* section[sectionDocuments].entry[documentReference] only Reference(https://standards.medicalert.nz/ns/MaDocumentReference)
+
+
+

@@ -97,7 +97,7 @@
           "reference": "StructureDefinition/MedicAlert-document-reference"
         },
         "name": "MedicAlert DocumentReference",
-        "description": "This is a profile on the DocumentReference resource. It is used to link resources (such as Advance Directives) to a copy of the original document (usually in PDF format), that a resource is based on. ",
+        "description": "This is a profile on the DocumentReference resource. It is used to link resources (such as Advance Directives and Emergency medical action plans) to a copy of the original document (in PDF format), that a resource is based on. ",
         "exampleBoolean": false
       },
       {

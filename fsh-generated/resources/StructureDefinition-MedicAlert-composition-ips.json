@@ -72,6 +72,148 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "min": 3
+      },
+      {
+        "id": "Composition.section:sectionWarnings",
+        "path": "Composition.section",
+        "sliceName": "sectionWarnings",
+        "short": "Flags and Warnings Section",
+        "definition": "Warnings that MedicAlert holds for a patient that do not fit into other resources in the patient summary or to highlight important resources within the summary.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:sectionWarnings.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:sectionWarnings.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "74018-3",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:sectionWarnings.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Flags and Warnings for the patient",
+        "definition": "Warnings that MedicAlert holds for a patient that do not fit into other resources in the patient summary or to highlight important resources within the summary",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Flag"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:sectionWarnings.entry:warning",
+        "path": "Composition.section.entry",
+        "sliceName": "warning",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://standards.medicalert.nz/ns/MaWarning"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:sectionDocuments",
+        "path": "Composition.section",
+        "sliceName": "sectionDocuments",
+        "short": "Documents Section",
+        "definition": "used to link resources (such as Advance Directives and Emergency medical action plans) to a copy of the original document (in PDF format).",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:sectionDocuments.title",
+        "path": "Composition.section.title",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:sectionDocuments.code",
+        "path": "Composition.section.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "51851-4",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:sectionDocuments.entry",
+        "path": "Composition.section.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "DocumentsReference resource with link to original documents",
+        "definition": "used to link resources (such as Advance Directives and Emergency medical action plans) to a copy of the original document (in PDF format)",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:sectionDocuments.entry:documentReference",
+        "path": "Composition.section.entry",
+        "sliceName": "documentReference",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://standards.medicalert.nz/ns/MaDocumentReference"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }
