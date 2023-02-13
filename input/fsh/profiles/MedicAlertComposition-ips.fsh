@@ -40,7 +40,7 @@ This profile is based on the ClinicalDocument profile."""
 * section[sectionDocuments] ^short = "Documents Section"
 * section[sectionDocuments] ^definition = "used to link resources (such as Advance Directives and Emergency medical action plans) to a copy of the original document (in PDF format)."
 * section[sectionDocuments].title 1.. MS
-* section[sectionDocuments].code = http://loinc.org#51851-4
+* section[sectionDocuments].code = http://loinc.org#42348-3
 * section[sectionDocuments].entry 1.. MS
 * section[sectionDocuments].entry only Reference(DocumentReference)
 * section[sectionDocuments].entry ^slicing.discriminator[0].type = #profile
