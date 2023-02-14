@@ -19,6 +19,7 @@ dependencies:
   hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
     version: current
+  fhir.org.nz.ig.base: dev
 
 menu:
   Home: index.html

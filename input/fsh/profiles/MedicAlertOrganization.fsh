@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips
 Id: MedicAlert-Organization
 Title: "MedicAlert Organization (IPS)"
 Description: """This profile represents the constraints applied to Organization resource by the MedicAlert Organization profile, based on the International Patient Summary (IPS) FHIR Implementation Guide."""
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^status = #active
 * ^publisher = "MedicAlert"
 * ^url = "https://standards.medicalert.nz/ns/MaOrganization"

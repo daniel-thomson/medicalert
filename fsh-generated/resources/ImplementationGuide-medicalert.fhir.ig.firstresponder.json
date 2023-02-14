@@ -40,6 +40,12 @@
       "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
       "version": "current",
       "id": "hl7_fhir_uv_ips"
+    },
+    {
+      "packageId": "fhir.org.nz.ig.base",
+      "version": "dev",
+      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/fhir.org.nz.ig.base",
+      "id": "fhir_org_nz_ig_base"
     }
   ],
   "definition": {
