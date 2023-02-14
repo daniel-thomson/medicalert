@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "MedicAlert-Organization",
   "url": "https://standards.medicalert.nz/ns/MaOrganization",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "MedicAlertOrganization",
   "title": "MedicAlert Organization (IPS)",
   "status": "active",
