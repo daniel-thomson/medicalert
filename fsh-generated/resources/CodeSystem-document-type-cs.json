@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DocumentType",
+  "id": "document-type-cs",
+  "title": "MedicAlert document type CodeSystem",
+  "description": "Type of document referenced",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/CodeSystem/DocumentType",
+  "concept": [
+    {
+      "code": "POA",
+      "display": "Enduring power of Attorney"
+    },
+    {
+      "code": "Adv",
+      "display": "Advanced Directive"
+    },
+    {
+      "code": "Wrn",
+      "display": "Medical warning notice"
+    },
+    {
+      "code": "Act",
+      "display": "Emergency medical action plan"
+    },
+    {
+      "code": "Drg",
+      "display": "Drug Warning"
+    }
+  ],
+  "caseSensitive": false,
+  "count": 5
+}

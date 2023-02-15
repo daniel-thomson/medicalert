@@ -11,3 +11,4 @@ Description: """This is a profile on the DocumentReference resource. It is used 
 //* meta.tag from https://standards.medicalert.nz/ValueSet/RiskRating (required) 
 //* meta.tag MS
 
+* type from https://standards.medicalert.nz/ValueSet/DocumentType

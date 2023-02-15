@@ -228,6 +228,30 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/document-type-vs"
+        },
+        "name": "MedicAlert document type ValueSet",
+        "description": "Type of document referenced",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-location-type"
+        },
+        "name": "HPI Location Type",
+        "description": "A coded type for types of facilities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/HpiOrganisation-type"
+        },
+        "name": "Organisation Type",
+        "description": "Organisation type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ma-risk-rating-vs"
         },
         "name": "MedicAlertRiskRatings",
@@ -256,6 +280,30 @@
         },
         "name": "MedicAlert Access Reason CodeSystem",
         "description": "Reason for accessing the API",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/document-type-cs"
+        },
+        "name": "MedicAlert document type CodeSystem",
+        "description": "Type of document referenced",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-location-type"
+        },
+        "name": "Location Type",
+        "description": "A coded value for location type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/hpi-organisation-type-1.1"
+        },
+        "name": "Organisation Type",
+        "description": "A coded value for organisation type.",
         "exampleBoolean": false
       },
       {

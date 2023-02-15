@@ -64,8 +64,12 @@
   "differential": {
     "element": [
       {
-        "id": "DocumentReference",
-        "path": "DocumentReference"
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.medicalert.nz/ValueSet/DocumentType"
+        }
       }
     ]
   }

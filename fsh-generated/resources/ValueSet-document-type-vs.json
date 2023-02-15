@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DocumentType",
+  "id": "document-type-vs",
+  "title": "MedicAlert document type ValueSet",
+  "description": "Type of document referenced",
+  "version": "0.1.0",
+  "url": "https://standards.medicalert.nz/ValueSet/DocumentType",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.medicalert.nz/CodeSystem/DocumentType"
+      }
+    ]
+  }
+}
