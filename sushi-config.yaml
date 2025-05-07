@@ -18,8 +18,8 @@ dependencies:
 
   hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
-    version: current
-  fhir.org.nz.ig.base: dev
+    version: 1.1.0
+  fhir.org.nz.ig.base: 3.0.1
 
 menu:
   Home: index.html
