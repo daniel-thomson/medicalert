@@ -1,2 +1,2 @@
 # medicalert
-MedicAlert first responder API FHIR IG 
+MedicAlert first responder API FHIR IG.
